@@ -7,7 +7,7 @@ const impressum = () => {
       <div className='flex-1 flex flex-col'>
         <h3 className={styles.heading2}>Impressum</h3>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Information according to § 5 TMG: <br/>
+          Information according to § 5 DDG: <br/>
           SAFER Technologies UG (haftungsbeschränkt)<br/>
           Hauptstraße 35a<br/>
           77839, Lichtenau, Germany <br/><br/>
