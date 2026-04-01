@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use – FLARE by SAFER Technologies</title>
+  <meta name="description" content="Terms of Use for the FLARE app by SAFER Technologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:            #00040f;
+      --cyan:          #00f6ff;
+      --white:         #ffffff;
+      --dim:           rgba(255,255,255,0.7);
+      --border:        #3F3E45;
+      --text-gradient: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+    }
+    html { scroll-behavior: smooth; }
+    body { background-color: var(--bg); color: var(--white); font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+
+    nav {
+      max-width: 1280px; margin: 0 auto; padding: 24px 64px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-brand {
+      font-size: 20px; font-weight: 700; text-decoration: none;
+      background: var(--text-gradient); -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 2px;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { color: var(--dim); text-decoration: none; font-size: 15px; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--cyan); }
+    @media (max-width: 768px) { nav { padding: 20px 24px; } .nav-links { display: none; } }
+
+    .page-header { max-width: 860px; margin: 0 auto; padding: 60px 64px 48px; }
+    .badge {
+      display: inline-block; background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+      border-radius: 8px; padding: 5px 14px; font-size: 13px; color: var(--cyan);
+      font-weight: 500; margin-bottom: 20px;
+    }
+    .page-header h1 { font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+    .page-header p { font-size: 16px; color: var(--dim); line-height: 1.7; max-width: 580px; }
+    .last-updated { display: inline-block; margin-top: 12px; font-size: 14px; color: rgba(255,255,255,0.4); }
+    @media (max-width: 768px) { .page-header { padding: 40px 24px 32px; } }
+
+    .content { max-width: 860px; margin: 0 auto; padding: 0 64px 100px; }
+    @media (max-width: 768px) { .content { padding: 0 24px 80px; } }
+
+    .toc {
+      background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+      border-radius: 16px; padding: 28px 32px; margin-bottom: 56px;
+    }
+    .toc h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--cyan); }
+    .toc ol { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .toc a { color: var(--dim); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .toc a:hover { color: var(--cyan); }
+
+    .section { margin-bottom: 52px; }
+    .section h2 {
+      font-size: 22px; font-weight: 600; margin-bottom: 18px;
+      padding-bottom: 10px; border-bottom: 1px solid var(--border);
+      scroll-margin-top: 80px;
+    }
+    .section h3 { font-size: 17px; font-weight: 600; margin: 24px 0 10px; color: var(--cyan); }
+    .section p { font-size: 15px; color: var(--dim); line-height: 1.8; margin-bottom: 14px; }
+    .section ul, .section ol {
+      padding-left: 24px; margin-bottom: 14px;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .section li { font-size: 15px; color: var(--dim); line-height: 1.7; }
+    .section li strong { color: var(--white); }
+    .section a { color: var(--cyan); text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+
+    .info-box {
+      background: rgba(0,246,255,0.06); border: 1px solid rgba(0,246,255,0.2);
+      border-radius: 12px; padding: 18px 22px; margin: 20px 0;
+    }
+    .info-box p { margin-bottom: 0; font-size: 14px; }
+
+    .warn-box {
+      background: rgba(255,160,0,0.06); border: 1px solid rgba(255,160,0,0.25);
+      border-radius: 12px; padding: 18px 22px; margin: 20px 0;
+    }
+    .warn-box p { margin-bottom: 0; font-size: 14px; color: rgba(255,200,100,0.85); }
+
+    .contact-card {
+      background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+      border-radius: 16px; padding: 28px 32px; margin-top: 24px;
+    }
+    .contact-card p { margin-bottom: 6px; }
+    .contact-card a { color: var(--cyan); text-decoration: none; }
+
+    footer {
+      max-width: 1280px; margin: 0 auto; padding: 40px 64px;
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+    }
+    footer p { font-size: 15px; color: var(--dim); }
+    .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+    .footer-links a { color: var(--dim); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--cyan); }
+    @media (max-width: 768px) { footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/flare/" class="nav-brand">🔥 FLARE</a>
+    <ul class="nav-links">
+      <li><a href="/flare/">App</a></li>
+      <li><a href="/flare/privacy/">Privacy</a></li>
+      <li><a href="/flare/support/">Support</a></li>
+      <li><a href="/">safer.network</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="badge">Legal</div>
+    <h1>Terms of Use</h1>
+    <p>
+      Please read these Terms of Use carefully before using the FLARE app.
+      By creating an account or using FLARE, you agree to be bound by these terms.
+    </p>
+    <span class="last-updated">Last updated: April 1, 2025</span>
+  </div>
+
+  <div class="content">
+
+    <div class="toc">
+      <h3>Table of Contents</h3>
+      <ol>
+        <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+        <li><a href="#eligibility">2. Eligibility</a></li>
+        <li><a href="#account">3. Your Account</a></li>
+        <li><a href="#content">4. User-Generated Content</a></li>
+        <li><a href="#prohibited">5. Prohibited Conduct</a></li>
+        <li><a href="#purchases">6. Premium &amp; In-App Purchases</a></li>
+        <li><a href="#advertising">7. Advertising</a></li>
+        <li><a href="#ip">8. Intellectual Property</a></li>
+        <li><a href="#termination">9. Termination</a></li>
+        <li><a href="#disclaimer">10. Disclaimer of Warranties</a></li>
+        <li><a href="#liability">11. Limitation of Liability</a></li>
+        <li><a href="#governing">12. Governing Law &amp; Dispute Resolution</a></li>
+        <li><a href="#changes">13. Changes to These Terms</a></li>
+        <li><a href="#contact">14. Contact</a></li>
+      </ol>
+    </div>
+
+    <!-- 1 -->
+    <div class="section" id="acceptance">
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        These Terms of Use ("Terms") constitute a legally binding agreement between you and
+        <strong>SAFER Technologies UG (haftungsbeschränkt)</strong> ("SAFER Technologies", "we", "us", "our"),
+        governing your access to and use of the FLARE mobile application and related services (collectively, the "Service").
+      </p>
+      <p>
+        By downloading, installing, or using FLARE, you confirm that you have read, understood,
+        and agree to these Terms and our <a href="/flare/privacy/">Privacy Policy</a>.
+        If you do not agree, do not use the Service.
+      </p>
+    </div>
+
+    <!-- 2 -->
+    <div class="section" id="eligibility">
+      <h2>2. Eligibility</h2>
+      <p>
+        You must be at least <strong>13 years old</strong> to use FLARE. By using the Service,
+        you represent and warrant that you meet this age requirement.
+      </p>
+      <p>
+        If you are between 13 and 16 years old (or the applicable age of digital consent in your country),
+        you represent that your parent or legal guardian has reviewed and consented to these Terms and
+        your use of the Service.
+      </p>
+      <p>
+        FLARE is not directed at children under the age of 13. If we become aware that a user is under 13,
+        we will immediately terminate their account and delete all associated data.
+      </p>
+    </div>
+
+    <!-- 3 -->
+    <div class="section" id="account">
+      <h2>3. Your Account</h2>
+      <h3>3.1 Registration</h3>
+      <p>
+        To access most features of FLARE, you must create an account by providing a username, email address,
+        and password. You agree to provide accurate and complete information and to keep it up to date.
+      </p>
+      <h3>3.2 Account Security</h3>
+      <p>
+        You are responsible for maintaining the confidentiality of your password and for all activities
+        that occur under your account. Notify us immediately at
+        <a href="mailto:flare@safer.network">flare@safer.network</a> if you suspect unauthorized access.
+      </p>
+      <h3>3.3 One Account per Person</h3>
+      <p>
+        Each user may register one account. Creating multiple accounts to circumvent suspensions,
+        bans, or voting restrictions is prohibited and will result in all accounts being terminated.
+      </p>
+      <h3>3.4 Account Deletion</h3>
+      <p>
+        You may delete your account at any time via Profile → Settings → Delete Account, or by
+        emailing <a href="mailto:flare@safer.network">flare@safer.network</a>. See our
+        <a href="/flare/support/#delete-account">Support page</a> for instructions.
+      </p>
+    </div>
+
+    <!-- 4 -->
+    <div class="section" id="content">
+      <h2>4. User-Generated Content</h2>
+      <h3>4.1 Your Content</h3>
+      <p>
+        "User Content" means any photos, profile information, display names, or other material you
+        submit to FLARE. You retain ownership of your User Content.
+      </p>
+      <h3>4.2 License to Us</h3>
+      <p>
+        By submitting User Content, you grant SAFER Technologies a worldwide, non-exclusive,
+        royalty-free, sublicensable license to store, display, distribute, and use your content
+        within the FLARE Service (e.g., showing your photos in battles and on leaderboards).
+        This license ends when you delete the content or your account.
+      </p>
+      <h3>4.3 Content Standards</h3>
+      <p>You agree that your User Content will not:</p>
+      <ul>
+        <li>Be illegal, defamatory, obscene, or infringe any third-party rights</li>
+        <li>Contain nudity, sexually explicit material, or graphic violence</li>
+        <li>Depict or glorify self-harm, suicide, eating disorders, or dangerous activities</li>
+        <li>Constitute hate speech targeting individuals or groups based on protected characteristics</li>
+        <li>Include personal information of others without their consent</li>
+        <li>Be spam, artificially manipulated, or submitted via automated means</li>
+        <li>Violate any applicable laws or regulations</li>
+      </ul>
+      <h3>4.4 Moderation</h3>
+      <p>
+        We use automated and manual moderation to enforce these standards. We reserve the right
+        to remove any User Content that violates these Terms without prior notice. Repeated violations
+        will result in account suspension or termination.
+      </p>
+      <div class="info-box">
+        <p>
+          <strong>To report content:</strong> Tap the ⋯ menu on any photo and select "Report",
+          or email <a href="mailto:flare@safer.network" style="color:var(--cyan);">flare@safer.network</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="section" id="prohibited">
+      <h2>5. Prohibited Conduct</h2>
+      <p>When using FLARE, you agree not to:</p>
+      <ul>
+        <li><strong>Manipulate votes</strong> — Use bots, scripts, vote rings, or any coordinated means to artificially inflate Flare counts</li>
+        <li><strong>Impersonate others</strong> — Create accounts designed to impersonate another person or entity</li>
+        <li><strong>Reverse engineer</strong> — Attempt to decompile, disassemble, or extract source code from the app</li>
+        <li><strong>Interfere with the Service</strong> — Attempt to disable, overload, or disrupt the FLARE servers or infrastructure</li>
+        <li><strong>Scrape data</strong> — Use automated tools to collect data from FLARE without written permission</li>
+        <li><strong>Circumvent safety measures</strong> — Attempt to bypass content moderation, account restrictions, or geographic limits</li>
+        <li><strong>Harass users</strong> — Use FLARE to bully, harass, or stalk other users</li>
+        <li><strong>Violate laws</strong> — Use FLARE for any illegal purpose under applicable law</li>
+      </ul>
+    </div>
+
+    <!-- 6 -->
+    <div class="section" id="purchases">
+      <h2>6. Premium &amp; In-App Purchases</h2>
+      <h3>6.1 Premium Subscription</h3>
+      <p>
+        FLARE offers an optional Premium subscription that removes ads and unlocks additional features.
+        Subscriptions are billed through the Apple App Store or Google Play on a recurring basis
+        (monthly or annual, as selected).
+      </p>
+      <h3>6.2 Billing &amp; Renewal</h3>
+      <p>
+        Subscriptions automatically renew at the end of each billing period unless cancelled at least
+        24 hours before the renewal date. Your Apple ID or Google account will be charged for renewal
+        within 24 hours prior to the end of the current period.
+      </p>
+      <h3>6.3 Cancellation</h3>
+      <p>
+        You may cancel your subscription at any time through your App Store or Google Play account settings.
+        Cancellation takes effect at the end of the current billing period — you retain Premium access
+        until then. We do not offer refunds for partial billing periods.
+      </p>
+      <h3>6.4 Refunds</h3>
+      <p>
+        All purchases are processed by Apple or Google. Refund requests must be submitted directly to
+        Apple (<a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>)
+        or Google Play. We do not process refunds directly.
+      </p>
+      <div class="warn-box">
+        <p>
+          ⚠️ If you delete your FLARE account, you will lose access to Premium features.
+          Cancel your subscription through the App Store <em>before</em> deleting your account
+          to avoid further charges.
+        </p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="section" id="advertising">
+      <h2>7. Advertising</h2>
+      <p>
+        The free version of FLARE is supported by advertising served via Google AdMob. By using the
+        free version, you agree to the display of advertisements. You may remove ads by purchasing
+        a Premium subscription.
+      </p>
+      <p>
+        On iOS, we will request your consent via Apple's App Tracking Transparency framework before
+        using your Advertising Identifier for personalized ads. You may change this at any time in
+        iOS Settings. See our <a href="/flare/privacy/#advertising">Privacy Policy</a> for full details.
+      </p>
+    </div>
+
+    <!-- 8 -->
+    <div class="section" id="ip">
+      <h2>8. Intellectual Property</h2>
+      <h3>8.1 SAFER Technologies IP</h3>
+      <p>
+        The FLARE app, including its name, logo, design, code, features, and all content created by
+        SAFER Technologies, is owned by SAFER Technologies UG (haftungsbeschränkt) and protected by
+        intellectual property laws. Nothing in these Terms grants you any rights to our intellectual property.
+      </p>
+      <h3>8.2 Feedback</h3>
+      <p>
+        If you submit feedback, suggestions, or ideas about FLARE, you grant us the right to use that
+        feedback without any obligation to compensate you.
+      </p>
+      <h3>8.3 Third-Party Content</h3>
+      <p>
+        FLARE may display content from other users. We do not claim ownership of such content and
+        are not responsible for it. If you believe your copyrighted work has been infringed,
+        contact us at <a href="mailto:flare@safer.network">flare@safer.network</a>.
+      </p>
+    </div>
+
+    <!-- 9 -->
+    <div class="section" id="termination">
+      <h2>9. Termination</h2>
+      <p>
+        We reserve the right to suspend or terminate your account at any time, with or without notice,
+        if we determine that you have violated these Terms, applicable law, or if we believe your
+        actions may harm other users or the integrity of the Service.
+      </p>
+      <p>
+        Upon termination, your right to use FLARE ceases immediately. Provisions of these Terms that
+        by their nature should survive termination (including Sections 4, 8, 10, 11, and 12) shall
+        continue to apply.
+      </p>
+    </div>
+
+    <!-- 10 -->
+    <div class="section" id="disclaimer">
+      <h2>10. Disclaimer of Warranties</h2>
+      <p>
+        FLARE is provided "as is" and "as available" without warranties of any kind, either express
+        or implied. To the fullest extent permitted by applicable law, SAFER Technologies disclaims
+        all implied warranties, including but not limited to merchantability, fitness for a particular
+        purpose, and non-infringement.
+      </p>
+      <p>
+        We do not warrant that FLARE will be uninterrupted, error-free, or free of viruses or other
+        harmful components. We do not guarantee the accuracy, completeness, or reliability of any
+        user-generated content on the platform.
+      </p>
+    </div>
+
+    <!-- 11 -->
+    <div class="section" id="liability">
+      <h2>11. Limitation of Liability</h2>
+      <p>
+        To the maximum extent permitted by applicable law, SAFER Technologies and its directors,
+        employees, and agents shall not be liable for any indirect, incidental, special, consequential,
+        or punitive damages arising out of or related to your use of FLARE.
+      </p>
+      <p>
+        Our total liability to you for any claims arising from your use of the Service shall not
+        exceed the amount you paid us in the 12 months preceding the claim (or €50, whichever is greater).
+      </p>
+      <p>
+        Nothing in these Terms limits our liability for death or personal injury caused by our negligence,
+        fraud, or any other liability that cannot be excluded under applicable German law.
+      </p>
+    </div>
+
+    <!-- 12 -->
+    <div class="section" id="governing">
+      <h2>12. Governing Law &amp; Dispute Resolution</h2>
+      <p>
+        These Terms are governed by and construed in accordance with the laws of the
+        <strong>Federal Republic of Germany</strong>, without regard to its conflict of law provisions.
+      </p>
+      <p>
+        Any disputes arising from these Terms or your use of FLARE shall be subject to the exclusive
+        jurisdiction of the courts of <strong>Mannheim, Germany</strong>, unless mandatory consumer
+        protection law in your country of residence requires otherwise.
+      </p>
+      <p>
+        If you are a consumer in the EU, you may also have access to the European Commission's
+        Online Dispute Resolution platform at
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.
+        We are not obligated to participate in ODR procedures but will consider them case by case.
+      </p>
+    </div>
+
+    <!-- 13 -->
+    <div class="section" id="changes">
+      <h2>13. Changes to These Terms</h2>
+      <p>
+        We may update these Terms from time to time. We will notify you of material changes by
+        displaying a notice in the app or via email at least 14 days before the changes take effect.
+        Your continued use of FLARE after the effective date constitutes acceptance of the revised Terms.
+      </p>
+    </div>
+
+    <!-- 14 -->
+    <div class="section" id="contact">
+      <h2>14. Contact</h2>
+      <p>Questions about these Terms? Contact us:</p>
+      <div class="contact-card">
+        <p><strong>SAFER Technologies UG (haftungsbeschränkt)</strong></p>
+        <p>Hauptstraße 35a, 77839 Lichtenau, Germany</p>
+        <p>Represented by: Dr. Pascal Oser</p>
+        <p>E-Mail: <a href="mailto:flare@safer.network">flare@safer.network</a></p>
+        <p>Trade Register: Mannheim, HRB 749608</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2024 SAFER Technologies UG (haftungsbeschränkt)</p>
+    <ul class="footer-links">
+      <li><a href="/flare/">FLARE App</a></li>
+      <li><a href="/flare/privacy/">Privacy Policy</a></li>
+      <li><a href="/flare/support/">Support</a></li>
+      <li><a href="/#impressum">Impressum</a></li>
+      <li><a href="/">safer.network</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

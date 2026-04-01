@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – FLARE by SAFER Technologies</title>
+  <meta name="description" content="Privacy Policy for the FLARE app by SAFER Technologies. GDPR-compliant data protection information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:            #00040f;
+      --cyan:          #00f6ff;
+      --white:         #ffffff;
+      --dim:           rgba(255,255,255,0.7);
+      --border:        #3F3E45;
+      --text-gradient: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg);
+      color: var(--white);
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    nav {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-brand {
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      background: var(--text-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 2px;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { color: var(--dim); text-decoration: none; font-size: 15px; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--cyan); }
+
+    @media (max-width: 768px) {
+      nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+    }
+
+    .page-header {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 64px 48px;
+    }
+    .page-header .badge {
+      display: inline-block;
+      background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+      border-radius: 8px;
+      padding: 5px 14px;
+      font-size: 13px;
+      color: var(--cyan);
+      font-weight: 500;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .page-header h1 {
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .page-header p {
+      font-size: 16px;
+      color: var(--dim);
+      line-height: 1.7;
+      max-width: 580px;
+    }
+    .last-updated {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    @media (max-width: 768px) {
+      .page-header { padding: 40px 24px 32px; }
+    }
+
+    .content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 64px 100px;
+    }
+
+    .toc {
+      background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 56px;
+    }
+    .toc h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--cyan); }
+    .toc ol { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .toc a { color: var(--dim); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .toc a:hover { color: var(--cyan); }
+
+    .section { margin-bottom: 56px; }
+    .section h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 80px;
+    }
+    .section h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 24px 0 10px;
+      color: var(--cyan);
+    }
+    .section p {
+      font-size: 15px;
+      color: var(--dim);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+    .section ul, .section ol {
+      padding-left: 24px;
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .section li {
+      font-size: 15px;
+      color: var(--dim);
+      line-height: 1.7;
+    }
+    .section li strong { color: var(--white); }
+
+    .info-box {
+      background: rgba(0,246,255,0.06);
+      border: 1px solid rgba(0,246,255,0.2);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+    .info-box p { margin-bottom: 0; font-size: 14px; }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+    .data-table th {
+      text-align: left;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.04);
+      color: var(--cyan);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: 10px 14px;
+      color: var(--dim);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      vertical-align: top;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+
+    .contact-card {
+      background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-top: 24px;
+    }
+    .contact-card p { margin-bottom: 6px; }
+    .contact-card a { color: var(--cyan); text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .content { padding: 0 24px 80px; }
+      .data-table { font-size: 13px; }
+      .data-table th, .data-table td { padding: 8px 10px; }
+    }
+
+    footer {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 40px 64px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    footer p { font-size: 15px; color: var(--dim); }
+    .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+    .footer-links a { color: var(--dim); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--cyan); }
+
+    @media (max-width: 768px) {
+      footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/flare/" class="nav-brand">🔥 FLARE</a>
+    <ul class="nav-links">
+      <li><a href="/flare/">App</a></li>
+      <li><a href="/flare/support/">Support</a></li>
+      <li><a href="/flare/terms/">Terms</a></li>
+      <li><a href="/">safer.network</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>
+      We take your privacy seriously. This policy explains what data FLARE collects,
+      why we collect it, how it is used, and your rights as a user under the GDPR.
+    </p>
+    <span class="last-updated">Last updated: April 1, 2025</span>
+  </div>
+
+  <div class="content">
+
+    <!-- TOC -->
+    <div class="toc">
+      <h3>Table of Contents</h3>
+      <ol>
+        <li><a href="#controller">1. Data Controller</a></li>
+        <li><a href="#data-collected">2. Data We Collect</a></li>
+        <li><a href="#purpose">3. Purpose &amp; Legal Basis</a></li>
+        <li><a href="#third-parties">4. Third-Party Services</a></li>
+        <li><a href="#advertising">5. Advertising &amp; Tracking (ATT)</a></li>
+        <li><a href="#retention">6. Data Retention</a></li>
+        <li><a href="#transfers">7. International Data Transfers</a></li>
+        <li><a href="#rights">8. Your Rights (GDPR)</a></li>
+        <li><a href="#children">9. Children's Privacy</a></li>
+        <li><a href="#changes">10. Changes to this Policy</a></li>
+        <li><a href="#contact">11. Contact &amp; Data Requests</a></li>
+      </ol>
+    </div>
+
+    <!-- 1 -->
+    <div class="section" id="controller">
+      <h2>1. Data Controller</h2>
+      <p>The entity responsible for processing your personal data is:</p>
+      <div class="contact-card">
+        <p><strong>SAFER Technologies UG (haftungsbeschränkt)</strong></p>
+        <p>Hauptstraße 35a, 77839 Lichtenau, Germany</p>
+        <p>Represented by: Dr. Pascal Oser</p>
+        <p>E-Mail: <a href="mailto:flare@safer.network">flare@safer.network</a></p>
+        <p>Trade Register: Mannheim, HRB 749608</p>
+        <p>VAT ID: DE 365778955</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="section" id="data-collected">
+      <h2>2. Data We Collect</h2>
+      <p>We collect only the data necessary to operate the FLARE app. The following categories of data may be processed:</p>
+
+      <h3>2.1 Account Data</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>Data</th><th>Purpose</th><th>Required?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Username</td><td>Unique identifier displayed publicly</td><td>Yes</td></tr>
+          <tr><td>Email address</td><td>Account login, notifications, support</td><td>Yes</td></tr>
+          <tr><td>Password (hashed)</td><td>Secure authentication (never stored in plain text)</td><td>Yes</td></tr>
+          <tr><td>Display name</td><td>Shown on profile and leaderboards</td><td>Optional</td></tr>
+          <tr><td>Profile picture</td><td>Shown on your public profile</td><td>Optional</td></tr>
+          <tr><td>Bio</td><td>Shown on your public profile</td><td>Optional</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 User-Generated Content</h3>
+      <ul>
+        <li><strong>Photos</strong> you submit to trends and battles. These are stored on our servers and shown publicly within the app.</li>
+        <li><strong>Votes (Flares)</strong> you cast on other users' photos.</li>
+      </ul>
+
+      <h3>2.3 Location Data</h3>
+      <p>
+        FLARE uses your approximate location to show you local trends and battles and to assign
+        your content to a geographic radius. Location is only collected while the app is in use
+        (<em>When In Use</em> permission). We do not track location in the background.
+        You can disable location access in your iOS Settings at any time — the app will fall back
+        to a manually entered city.
+      </p>
+
+      <h3>2.4 Device &amp; Technical Data</h3>
+      <ul>
+        <li>Device type and operating system version</li>
+        <li>App version</li>
+        <li>Crash logs and error reports (for debugging purposes only)</li>
+        <li>IP address (logged temporarily for security rate-limiting)</li>
+      </ul>
+
+      <h3>2.5 Usage Data</h3>
+      <ul>
+        <li>Battles viewed and votes cast (aggregated for ranking algorithms)</li>
+        <li>Trends you browse or participate in</li>
+        <li>Session activity for app functionality and abuse prevention</li>
+      </ul>
+
+      <h3>2.6 Purchase Data</h3>
+      <p>
+        If you purchase a Premium subscription, transaction receipts are processed via
+        Apple App Store / Google Play and validated server-side through RevenueCat.
+        We do not store full payment card details. Your subscription status is stored.
+      </p>
+
+      <h3>2.7 Advertising Data (optional)</h3>
+      <p>
+        If you consent to ad tracking via Apple's App Tracking Transparency (ATT) prompt,
+        Google AdMob may collect your Advertising Identifier (IDFA) for personalized ads.
+        If you decline, you will still see ads, but they will not be personalized.
+        See Section 5 for full details.
+      </p>
+    </div>
+
+    <!-- 3 -->
+    <div class="section" id="purpose">
+      <h2>3. Purpose &amp; Legal Basis</h2>
+      <table class="data-table">
+        <thead>
+          <tr><th>Processing Activity</th><th>Legal Basis (GDPR Art. 6)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Providing the core app features (account, battles, trends, rankings)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
+          <tr><td>Location-based content discovery</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
+          <tr><td>Security, fraud prevention, rate-limiting</td><td>Art. 6(1)(f) — Legitimate interests</td></tr>
+          <tr><td>Sending transactional emails (account confirmation, support replies)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
+          <tr><td>Displaying non-personalized ads (AdMob)</td><td>Art. 6(1)(f) — Legitimate interests</td></tr>
+          <tr><td>Displaying personalized ads (AdMob with ATT consent)</td><td>Art. 6(1)(a) — Consent</td></tr>
+          <tr><td>Analytics for app improvement</td><td>Art. 6(1)(f) — Legitimate interests</td></tr>
+          <tr><td>Processing in-app purchases (RevenueCat)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
+          <tr><td>Compliance with legal obligations</td><td>Art. 6(1)(c) — Legal obligation</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4 -->
+    <div class="section" id="third-parties">
+      <h2>4. Third-Party Services</h2>
+      <p>We use the following third-party services that may process your data:</p>
+      <table class="data-table">
+        <thead>
+          <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google AdMob</strong><br/><em>Google LLC, USA</em></td>
+            <td>Displaying advertisements in the free app</td>
+            <td>policies.google.com/privacy</td>
+          </tr>
+          <tr>
+            <td><strong>RevenueCat</strong><br/><em>RevenueCat Inc., USA</em></td>
+            <td>In-app purchase &amp; subscription management</td>
+            <td>revenuecat.com/privacy</td>
+          </tr>
+          <tr>
+            <td><strong>Apple App Store / Google Play</strong></td>
+            <td>App distribution and purchase processing</td>
+            <td>apple.com/privacy, policies.google.com/privacy</td>
+          </tr>
+          <tr>
+            <td><strong>Self-Hosted Backend</strong><br/><em>EU-based servers</em></td>
+            <td>Core app data (accounts, photos, battles, rankings)</td>
+            <td>Data remains under our control on EU infrastructure</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        We do not sell your personal data to any third party. Data shared with third parties
+        is limited to what is strictly necessary for the stated purpose.
+      </p>
+    </div>
+
+    <!-- 5 -->
+    <div class="section" id="advertising">
+      <h2>5. Advertising &amp; Tracking (ATT)</h2>
+      <p>
+        FLARE is free to download and is supported by advertising via <strong>Google AdMob</strong>.
+        On iOS 14.5+, Apple requires us to request your permission before accessing your device's
+        Advertising Identifier (IDFA) for personalized ads. This is done via Apple's
+        <strong>App Tracking Transparency (ATT)</strong> framework.
+      </p>
+
+      <h3>If you grant permission:</h3>
+      <ul>
+        <li>AdMob may use your IDFA to show personalized, interest-based ads.</li>
+        <li>Ad performance may be measured across apps and websites.</li>
+      </ul>
+
+      <h3>If you decline (or on Android where ATT is not applicable):</h3>
+      <ul>
+        <li>You will still see ads, but they will be contextual and non-personalized.</li>
+        <li>Your IDFA will not be used for ad targeting.</li>
+      </ul>
+
+      <div class="info-box">
+        <p>
+          <strong>You can change your ATT decision at any time:</strong><br/>
+          iOS Settings → Privacy &amp; Security → Tracking → FLARE
+        </p>
+      </div>
+
+      <p>
+        AdMob may still collect certain non-identifying information (e.g., general device type,
+        approximate location at country level) for fraud prevention and aggregated reporting,
+        regardless of your ATT choice. See Google's Privacy Policy for details.
+      </p>
+    </div>
+
+    <!-- 6 -->
+    <div class="section" id="retention">
+      <h2>6. Data Retention</h2>
+      <table class="data-table">
+        <thead>
+          <tr><th>Data Category</th><th>Retention Period</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Account data</td><td>Until account deletion, plus 30 days grace period</td></tr>
+          <tr><td>Photos &amp; user-generated content</td><td>Until deleted by user or account deletion</td></tr>
+          <tr><td>Location data</td><td>Last known location retained while account is active; deleted on account deletion</td></tr>
+          <tr><td>Server logs / IP addresses</td><td>Maximum 14 days for security purposes</td></tr>
+          <tr><td>Purchase receipts</td><td>As required by tax law (10 years in Germany per HGB)</td></tr>
+          <tr><td>Support correspondence</td><td>3 years from last contact</td></tr>
+        </tbody>
+      </table>
+      <p>
+        You can request deletion of your account at any time from within the app (Profile → Settings → Delete Account)
+        or by contacting <a href="mailto:flare@safer.network" style="color:var(--cyan);">flare@safer.network</a>.
+      </p>
+    </div>
+
+    <!-- 7 -->
+    <div class="section" id="transfers">
+      <h2>7. International Data Transfers</h2>
+      <p>
+        Our primary backend infrastructure is hosted in the EU. However, some third-party services
+        (Google AdMob, RevenueCat) are based in the United States. Data transfers to these providers
+        are governed by Standard Contractual Clauses (SCCs) approved by the European Commission,
+        ensuring an adequate level of data protection.
+      </p>
+    </div>
+
+    <!-- 8 -->
+    <div class="section" id="rights">
+      <h2>8. Your Rights (GDPR)</h2>
+      <p>
+        As a data subject under the GDPR, you have the following rights. You can exercise any of
+        these by contacting us at <a href="mailto:flare@safer.network" style="color:var(--cyan);">flare@safer.network</a>:
+      </p>
+      <ul>
+        <li><strong>Right of access (Art. 15)</strong> — Request a copy of all personal data we hold about you.</li>
+        <li><strong>Right to rectification (Art. 16)</strong> — Request correction of inaccurate data.</li>
+        <li><strong>Right to erasure / "right to be forgotten" (Art. 17)</strong> — Request deletion of your data.</li>
+        <li><strong>Right to restriction of processing (Art. 18)</strong> — Request that we limit how we use your data.</li>
+        <li><strong>Right to data portability (Art. 20)</strong> — Receive your data in a structured, machine-readable format.</li>
+        <li><strong>Right to object (Art. 21)</strong> — Object to processing based on legitimate interests.</li>
+        <li><strong>Right to withdraw consent (Art. 7(3))</strong> — Withdraw any consent you have given (e.g., ATT) at any time without affecting prior processing.</li>
+      </ul>
+      <p>
+        You also have the right to lodge a complaint with a supervisory authority. In Germany,
+        the competent authority is:
+      </p>
+      <div class="info-box">
+        <p>
+          <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong><br/>
+          Postfach 10 29 32, 70025 Stuttgart, Germany<br/>
+          <a href="https://www.baden-wuerttemberg.datenschutz.de" style="color:var(--cyan);" target="_blank" rel="noopener">www.baden-wuerttemberg.datenschutz.de</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="section" id="children">
+      <h2>9. Children's Privacy</h2>
+      <p>
+        FLARE is not directed at children under the age of <strong>13</strong>. We do not knowingly
+        collect personal data from children under 13. If you believe a child under 13 has created
+        an account, please contact us immediately at
+        <a href="mailto:flare@safer.network" style="color:var(--cyan);">flare@safer.network</a>
+        and we will delete the account and associated data promptly.
+      </p>
+      <p>
+        Users between 13 and 16 years of age in the EU may require parental consent under
+        applicable national laws.
+      </p>
+    </div>
+
+    <!-- 10 -->
+    <div class="section" id="changes">
+      <h2>10. Changes to this Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. We will notify you of significant
+        changes by displaying a notice in the app or by email. The "Last updated" date at the top
+        of this page reflects the most recent revision. Continued use of FLARE after changes
+        constitutes acceptance of the updated policy.
+      </p>
+    </div>
+
+    <!-- 11 -->
+    <div class="section" id="contact">
+      <h2>11. Contact &amp; Data Requests</h2>
+      <p>For any privacy-related questions, data access requests, or account deletion requests:</p>
+      <div class="contact-card">
+        <p><strong>SAFER Technologies UG (haftungsbeschränkt)</strong></p>
+        <p>Attn: Data Protection</p>
+        <p>Hauptstraße 35a, 77839 Lichtenau, Germany</p>
+        <p>E-Mail: <a href="mailto:flare@safer.network">flare@safer.network</a></p>
+        <p style="margin-top:12px;font-size:14px;color:rgba(255,255,255,0.4);">
+          We aim to respond to all requests within 30 days as required by GDPR Art. 12.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2024 SAFER Technologies UG (haftungsbeschränkt)</p>
+    <ul class="footer-links">
+      <li><a href="/flare/">FLARE App</a></li>
+      <li><a href="/flare/terms/">Terms of Use</a></li>
+      <li><a href="/flare/support/">Support</a></li>
+      <li><a href="/#impressum">Impressum</a></li>
+      <li><a href="/">safer.network</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
