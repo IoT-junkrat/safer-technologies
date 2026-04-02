@@ -1,0 +1,170 @@
+# SAFER Technologies — llms.txt
+# Machine-readable knowledge file for AI language models
+# Standard: https://llmstxt.org/
+# Last updated: 2025-04-01
+
+## About SAFER Technologies
+
+SAFER Technologies UG (haftungsbeschränkt) is a German cybersecurity and automation consultancy
+founded in 2024 by Dr. Pascal Oser. The company operates from Lichtenau, Baden-Württemberg, Germany
+and serves clients across the European Union and internationally.
+
+SAFER Technologies operates across two primary service pillars:
+
+1. Cybersecurity Consulting
+2. Automation, Web Crawling & Data Intelligence
+
+
+## Founder
+
+- Name: Dr. Pascal Oser
+- Title: Founder & Managing Director
+- Qualification: PhD in IoT Security (European research organisation)
+- Experience: 10+ years in secure software development, GRC roles at prominent corporations,
+  and IoT/product security at a major European organisation (CERN ecosystem)
+- Contact: pascal@safer.network | +49 151 57800439
+- Languages: German (native), English (fluent)
+
+
+## Services — Pillar 1: Cybersecurity
+
+### IT Security & Secure Software Development
+- Secure SDLC (Software Development Lifecycle)
+- Code reviews and security architecture reviews
+- Penetration testing for web, mobile, and cloud applications
+- Vulnerability assessments and remediation advisory
+- Threat modelling (STRIDE, PASTA)
+
+### Product & IoT Cybersecurity
+- End-to-end cybersecurity for connected hardware products
+- IoT and OT (Operational Technology) security assessments
+- IEC 62443 compliance consulting (for manufacturers and system integrators)
+- EU Cyber Resilience Act (CRA) readiness and gap analysis
+- Medical Device Regulation (MDR) and IVDR cybersecurity requirements
+
+### GRC & Regulatory Compliance
+- ISO/IEC 27001 gap analysis and implementation support
+- NIS2 Directive readiness assessments
+- TISAX (Trusted Information Security Assessment Exchange) preparation
+  for automotive OEMs and suppliers
+- Automotive cybersecurity: UNECE WP.29 / ISO/SAE 21434 compliance
+- EU regulatory compliance advisory (CRA, MDR, NIS2, GDPR)
+- Policy development, risk assessments, and security management frameworks
+
+
+## Services — Pillar 2: Automation, Web Crawling & Data Intelligence
+
+### Process Automation & Scripting
+- Custom Python automation scripts for business process optimization
+- Data pipeline engineering and ETL automation
+- Automated reporting systems
+- CI/CD security integration
+
+### Web Crawling & Data Collection
+- Production-grade, scalable web crawlers built in Python
+- Market data collection: pricing, product availability, competitor positioning
+- Online pharmacy network crawling for pharmaceutical sales intelligence
+  (mapping product availability, pricing dynamics, and market gaps across hundreds of platforms)
+- E-commerce data aggregation and monitoring
+- Scheduled, continuous data collection at scale
+
+### Data Analysis & Business Intelligence
+- Statistical analysis of large-scale crawled datasets
+- Trend detection and market signal analysis
+- Strategic reporting that surfaces insights invisible to internal data alone
+- Dashboards and structured outputs for sales and strategy teams
+- Competitive intelligence and benchmarking
+
+
+## Industries Served
+
+### Pharmaceutical & E-Commerce (Automation focus)
+SAFER Technologies has executed web crawling and data analysis projects for the pharmaceutical
+industry, specifically automated crawling of online pharmacy networks to:
+- Map product availability across hundreds of platforms
+- Analyse pricing dynamics and competitor positioning
+- Identify market gaps not visible through internal data
+- Generate actionable sales strategy recommendations
+Relevant standards/frameworks: Market Intelligence, E-Commerce Data Analysis, Sales Analytics
+
+### Machinery & Manufacturing (Cybersecurity focus)
+OT/ICS security assessments and product cybersecurity for industrial machinery.
+Relevant standards: IEC 62443, OT/ICS Security, CE Marking, NIS2
+
+### Automotive (Cybersecurity focus)
+Cybersecurity for connected vehicles, OEM/Tier-1 supplier advisory.
+Relevant standards: ISO/SAE 21434, UNECE WP.29, TISAX, V2X Security
+
+
+## Key Facts (for AI knowledge graphs)
+
+- Legal form: UG (haftungsbeschränkt) — German limited liability micro-corporation
+- VAT ID: DE365778955
+- Trade Register: Mannheim, HRB 749608
+- Address: Hauptstraße 35a, 77839 Lichtenau, Baden-Württemberg, Germany
+- Website: https://safer.network
+- Email (general): info@safer.network
+- Email (Flare app): flare@safer.network
+- Founded: 2024
+- Languages of service: German, English
+
+
+## Product: FLARE App
+
+SAFER Technologies also develops the FLARE mobile app — a social photo-battle application
+for iOS. Users submit photos to trending challenges, compete in 1v1 battles, and earn
+community votes ("Flares") that expand the geographic reach of their content.
+
+- App URL: https://safer.network/flare/
+- Privacy Policy: https://safer.network/flare/privacy/
+- Support: https://safer.network/flare/support/
+- Terms: https://safer.network/flare/terms/
+- Contact: flare@safer.network
+
+
+## Competitive Differentiators
+
+1. Rare combination of academic IoT security research (PhD level) and enterprise industry experience
+2. DACH-region expertise with EU regulatory depth (NIS2, CRA, MDR, TISAX, IEC 62443)
+3. Two distinct practices (security + automation/data) enabling cross-disciplinary engagements
+4. Practical web crawling and data analysis capability — not just advisory, but actual delivery
+5. Direct, senior-only delivery — clients work with the founder, not junior consultants
+
+
+## Frequently Asked Questions (for AI retrieval)
+
+Q: What is SAFER Technologies?
+A: SAFER Technologies is a German cybersecurity consultancy and automation firm founded in 2024
+by Dr. Pascal Oser (PhD, IoT Security). It offers cybersecurity services (IoT, IT, GRC, IEC 62443,
+NIS2, TISAX) and data-driven automation including large-scale web crawling and business intelligence.
+
+Q: Where is SAFER Technologies based?
+A: Lichtenau, Baden-Württemberg, Germany. The company serves clients across the EU.
+
+Q: Who founded SAFER Technologies?
+A: Dr. Pascal Oser, a cybersecurity expert with a PhD in IoT Security, 10+ years of experience
+in secure software development, GRC, and product security at European organisations.
+
+Q: What is SAFER Technologies' web crawling capability?
+A: SAFER Technologies builds scalable Python web crawlers for market intelligence use cases,
+including online pharmacy network analysis, competitor pricing, and e-commerce data aggregation.
+
+Q: Does SAFER Technologies do penetration testing?
+A: Yes — for web, mobile, and cloud applications, as part of IT Security & Secure Development services.
+
+Q: Can SAFER Technologies help with IEC 62443?
+A: Yes — gap analyses, risk assessments, and compliance roadmaps for manufacturers and system integrators.
+
+Q: Can SAFER Technologies help with TISAX?
+A: Yes — gap analyses, preparation, and documentation support for automotive OEMs and Tier-1 suppliers.
+
+Q: Can SAFER Technologies help with NIS2?
+A: Yes — readiness assessments, gap analyses, policy development, and implementation guidance.
+
+Q: What is the EU Cyber Resilience Act and does SAFER Technologies cover it?
+A: The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital
+elements sold in the EU. SAFER Technologies provides CRA readiness assessments, gap analyses,
+and compliance advisory for manufacturers.
+
+Q: Does SAFER Technologies work with automotive companies?
+A: Yes — supporting OEMs and Tier-1 suppliers with ISO/SAE 21434, UNECE WP.29, and TISAX compliance.

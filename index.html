@@ -1,15 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SAFER Technologies</title>
-    <script type="module" crossorigin src="/assets/index-2f9debf3.js"></script>
-    <link rel="stylesheet" href="/assets/index-d8179569.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PRIMARY META
+  ════════════════════════════════════════════════════════════════ -->
+  <title>SAFER Technologies – Cybersecurity & Automation Consulting | safer.network</title>
+  <meta name="description" content="SAFER Technologies UG – Expert cybersecurity consulting (IoT, IT, GRC, IEC 62443, NIS2, TISAX) and data-driven automation including large-scale web crawling and business intelligence. Based in Germany, serving pharmaceutical, machinery and automotive industries." />
+  <meta name="keywords" content="cybersecurity consulting, IoT security, IT security, GRC compliance, IEC 62443, NIS2, TISAX, ISO 27001, EU Cyber Resilience Act, web crawling, automation, data analysis, business intelligence, pharmaceutical cybersecurity, automotive cybersecurity, OT ICS security, penetration testing, SAFER Technologies, Pascal Oser, Germany, Baden-Württemberg" />
+  <meta name="author" content="SAFER Technologies UG (haftungsbeschränkt)" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://safer.network/" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       LANGUAGE ALTERNATES (hreflang)
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="alternate" hreflang="en" href="https://safer.network/" />
+  <link rel="alternate" hreflang="de" href="https://safer.network/" />
+  <link rel="alternate" hreflang="x-default" href="https://safer.network/" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       OPEN GRAPH (Facebook, LinkedIn, WhatsApp, iMessage)
+  ════════════════════════════════════════════════════════════════ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://safer.network/" />
+  <meta property="og:site_name"   content="SAFER Technologies" />
+  <meta property="og:title"       content="SAFER Technologies – Cybersecurity & Automation Consulting" />
+  <meta property="og:description" content="Expert cybersecurity consulting (IoT, IT security, GRC, IEC 62443, NIS2, TISAX) and large-scale web crawling & data intelligence. Serving pharmaceutical, machinery and automotive industries from Germany." />
+  <meta property="og:image"       content="https://safer.network/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="SAFER Technologies – Cybersecurity and Automation Consulting" />
+  <meta property="og:locale"      content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       TWITTER / X CARDS
+  ════════════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="SAFER Technologies – Cybersecurity & Automation Consulting" />
+  <meta name="twitter:description" content="Expert IoT/IT cybersecurity, GRC compliance (IEC 62443, NIS2, TISAX) and web crawling / data intelligence from Germany." />
+  <meta name="twitter:image"       content="https://safer.network/og-image.png" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       GEO / LOCAL SEO
+  ════════════════════════════════════════════════════════════════ -->
+  <meta name="geo.region"   content="DE-BW" />
+  <meta name="geo.placename" content="Lichtenau, Baden-Württemberg, Germany" />
+  <meta name="geo.position" content="48.7358;8.1422" />
+  <meta name="ICBM"         content="48.7358, 8.1422" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FAVICON & ICONS
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PERFORMANCE HINTS
+  ════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://ipapi.co" />
+
+  <!-- ═══════════════════════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD
+       Entities recognized by Google, Bing, and AI systems
+       (ChatGPT, Claude, Perplexity, Gemini)
+  ════════════════════════════════════════════════════════════════ -->
+
+  <!-- 1. WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://safer.network/#website",
+    "url": "https://safer.network/",
+    "name": "SAFER Technologies",
+    "description": "Cybersecurity consulting and data-driven automation services from Germany",
+    "inLanguage": ["en", "de"],
+    "publisher": {
+      "@id": "https://safer.network/#organization"
+    }
+  }
+  </script>
+
+  <!-- 2. Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://safer.network/#organization",
+    "name": "SAFER Technologies UG (haftungsbeschränkt)",
+    "alternateName": ["SAFER Technologies", "SAFER.network"],
+    "url": "https://safer.network/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://safer.network/logo.png",
+      "width": 400,
+      "height": 200
+    },
+    "description": "SAFER Technologies is a German cybersecurity and automation consultancy specialising in IoT/OT security, IT security, GRC compliance, large-scale web crawling, and data-driven business intelligence. Founded by Dr. Pascal Oser, a PhD holder in IoT Security with over 10 years of industry experience.",
+    "foundingDate": "2024",
+    "legalName": "SAFER Technologies UG (haftungsbeschränkt)",
+    "vatID": "DE365778955",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hauptstraße 35a",
+      "addressLocality": "Lichtenau",
+      "postalCode": "77839",
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+49-151-57800439",
+        "contactType": "customer support",
+        "email": "info@safer.network",
+        "availableLanguage": ["German", "English"]
+      }
+    ],
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.7358,
+        "longitude": 8.1422
+      },
+      "geoRadius": "5000000"
+    },
+    "knowsAbout": [
+      "Cybersecurity",
+      "IoT Security",
+      "OT Security",
+      "ICS Security",
+      "GRC Compliance",
+      "ISO 27001",
+      "IEC 62443",
+      "NIS2 Directive",
+      "EU Cyber Resilience Act",
+      "TISAX",
+      "UNECE WP.29",
+      "ISO/SAE 21434",
+      "Penetration Testing",
+      "Secure Software Development",
+      "Web Crawling",
+      "Data Analysis",
+      "Business Intelligence",
+      "Automation",
+      "Market Intelligence",
+      "Pharmaceutical Industry Security",
+      "Automotive Cybersecurity",
+      "Industrial Cybersecurity"
+    ],
+    "sameAs": [
+      "https://safer.network"
+    ]
+  }
+  </script>
+
+  <!-- 3. Person — Dr. Pascal Oser -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://safer.network/#pascal-oser",
+    "name": "Dr. Pascal Oser",
+    "honorificPrefix": "Dr.",
+    "givenName": "Pascal",
+    "familyName": "Oser",
+    "jobTitle": "Founder & Managing Director",
+    "worksFor": {
+      "@id": "https://safer.network/#organization"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "PhD",
+      "about": "IoT Security",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "European Research Organisation"
+      }
+    },
+    "knowsAbout": [
+      "IoT Security", "OT Security", "Cybersecurity Consulting",
+      "GRC Compliance", "IEC 62443", "Secure Software Development",
+      "Web Crawling", "Data Analysis"
+    ],
+    "telephone": "+49-151-57800439",
+    "email": "pascal@safer.network",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lichtenau",
+      "addressCountry": "DE"
+    }
+  }
+  </script>
+
+  <!-- 4. ProfessionalService (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": "https://safer.network/#localbusiness",
+    "name": "SAFER Technologies",
+    "image": "https://safer.network/og-image.png",
+    "url": "https://safer.network/",
+    "telephone": "+49-151-57800439",
+    "email": "info@safer.network",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hauptstraße 35a",
+      "addressLocality": "Lichtenau",
+      "postalCode": "77839",
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.7358,
+      "longitude": 8.1422
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "priceRange": "€€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Invoice",
+    "areaServed": ["DE", "AT", "CH", "EU"],
+    "hasMap": "https://maps.google.com/?q=Hauptstraße+35a,+77839+Lichtenau,+Germany"
+  }
+  </script>
+
+  <!-- 5. Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "SAFER Technologies Services",
+    "description": "Full-spectrum cybersecurity and automation services",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "@id": "https://safer.network/#service-it-security",
+          "name": "IT Security & Secure Software Development",
+          "description": "Secure SDLC, code reviews, penetration testing, and vulnerability assessments for web, mobile, and cloud applications.",
+          "provider": {"@id": "https://safer.network/#organization"},
+          "serviceType": "Cybersecurity Consulting",
+          "areaServed": "EU"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "@id": "https://safer.network/#service-iot-security",
+          "name": "Product & IoT Cybersecurity",
+          "description": "End-to-end security for connected products and IoT/OT environments. Compliance with IEC 62443, MDR, and the EU Cyber Resilience Act.",
+          "provider": {"@id": "https://safer.network/#organization"},
+          "serviceType": "IoT Security Consulting",
+          "areaServed": "EU"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "@id": "https://safer.network/#service-grc",
+          "name": "GRC & Regulatory Compliance",
+          "description": "Gap analyses, risk assessments, and policy frameworks for ISO 27001, NIS2, TISAX, and EU regulatory requirements.",
+          "provider": {"@id": "https://safer.network/#organization"},
+          "serviceType": "GRC Consulting",
+          "areaServed": "EU"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Service",
+          "@id": "https://safer.network/#service-automation",
+          "name": "Process Automation & Scripting",
+          "description": "Custom automation scripts and data pipelines for business process optimization.",
+          "provider": {"@id": "https://safer.network/#organization"},
+          "serviceType": "Business Process Automation",
+          "areaServed": "EU"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Service",
+          "@id": "https://safer.network/#service-webcrawling",
+          "name": "Web Crawling & Data Collection",
+          "description": "Scalable web crawlers for market data, competitor pricing, and product availability intelligence.",
+          "provider": {"@id": "https://safer.network/#organization"},
+          "serviceType": "Web Crawling & Data Intelligence",
+          "areaServed": "EU"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Service",
+          "@id": "https://safer.network/#service-data-analysis",
+          "name": "Data Analysis & Business Intelligence",
+          "description": "Statistical analysis, trend detection, and strategic reporting transforming raw data into actionable business insight.",
+          "provider": {"@id": "https://safer.network/#organization"},
+          "serviceType": "Data Analysis & Business Intelligence",
+          "areaServed": "EU"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- 6. FAQ — boosts rich snippets and AI knowledge extraction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What cybersecurity services does SAFER Technologies offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SAFER Technologies offers IT security and secure software development, product and IoT cybersecurity (IEC 62443, EU Cyber Resilience Act), GRC and regulatory compliance (ISO 27001, NIS2, TISAX), and threat intelligence services."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does SAFER Technologies offer services beyond cybersecurity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. SAFER Technologies operates a second practice focused on automation and data intelligence: large-scale web crawling, data pipeline engineering, and business intelligence analytics that surface competitive insights from open-web data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which industries does SAFER Technologies serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SAFER Technologies serves pharmaceutical and life sciences companies (web crawling, market intelligence, MDR/IVDR), machinery and manufacturing (IEC 62443, OT/ICS security, CE marking), and the automotive industry (ISO/SAE 21434, UNECE WP.29, TISAX)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the IEC 62443 standard and does SAFER Technologies support compliance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IEC 62443 is the international standard series for industrial automation and control system (IACS) security. SAFER Technologies provides gap analyses, risk assessments, and compliance roadmaps for manufacturers and system integrators seeking IEC 62443 conformity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is TISAX and can SAFER Technologies help with it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TISAX (Trusted Information Security Assessment Exchange) is the automotive industry's information security assessment standard. SAFER Technologies supports OEMs and suppliers with TISAX gap analyses, preparation, and documentation for assessment readiness."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is SAFER Technologies located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SAFER Technologies UG (haftungsbeschränkt) is headquartered in Lichtenau, Baden-Württemberg, Germany. The company serves clients across the EU and internationally."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who founded SAFER Technologies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SAFER Technologies was founded by Dr. Pascal Oser, who holds a PhD in IoT Security from a leading European research organisation and brings over 10 years of experience in secure software development and GRC roles at prominent corporations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can SAFER Technologies help with NIS2 compliance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. SAFER Technologies provides NIS2 readiness assessments, gap analyses, policy development, and implementation support to help organisations meet the EU NIS2 Directive requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What web crawling services does SAFER Technologies offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SAFER Technologies builds scalable, production-grade web crawlers for business intelligence use cases including competitor price monitoring, market coverage mapping (e.g. online pharmacy networks), product availability tracking, and e-commerce data analysis."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- 7. BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "SAFER Technologies",
+        "item": "https://safer.network/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="module" crossorigin src="/assets/index-ea0a6a42.js"></script>
+  <link rel="stylesheet" href="/assets/index-0a035b0d.css">
+</head>
+<body>
+  <div id="root"></div>
+  
+</body>
 </html>
