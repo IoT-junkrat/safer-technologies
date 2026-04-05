@@ -64,6 +64,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://ipapi.co" />
+  <!-- Non-blocking Poppins font load (no render-blocking) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" /></noscript>
+
+  <!-- Google Analytics Consent Mode v2 defaults (before GA loads) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+  </script>
 
   <!-- ═══════════════════════════════════════════════════════════
        STRUCTURED DATA — JSON-LD
@@ -426,8 +442,9 @@
   }
   </script>
 
-  <script type="module" crossorigin src="/assets/index-17778498.js"></script>
-  <link rel="stylesheet" href="/assets/index-de6f7309.css">
+  <script type="module" crossorigin src="/assets/index-3e46e6e3.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-df5c11d6.js">
+  <link rel="stylesheet" href="/assets/index-3010f9b7.css">
 </head>
 <body>
   <div id="root"></div>
