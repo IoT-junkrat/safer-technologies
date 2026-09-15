@@ -1,25 +1,49 @@
 import React from 'react'
-import { apple, bill, google } from '../assets'
+import { bill } from '../assets'
+import { useLanguage } from '../context/LanguageContext'
 import styles, { layout } from '../style'
 
+const colorMap = {
+  cyan:   'bg-[rgba(0,246,255,0.08)] border-[rgba(0,246,255,0.2)] text-[#00f6ff]',
+  blue:   'bg-[rgba(99,102,241,0.08)] border-[rgba(99,102,241,0.25)] text-[#818cf8]',
+  green:  'bg-[rgba(52,211,153,0.08)] border-[rgba(52,211,153,0.2)] text-[#34d399]',
+  amber:  'bg-[rgba(251,191,36,0.08)] border-[rgba(251,191,36,0.2)] text-[#fbbf24]',
+  orange: 'bg-[rgba(251,146,60,0.08)] border-[rgba(251,146,60,0.2)] text-[#fb923c]',
+  purple: 'bg-[rgba(192,132,252,0.08)] border-[rgba(192,132,252,0.2)] text-[#c084fc]',
+  red:    'bg-[rgba(248,113,113,0.08)] border-[rgba(248,113,113,0.2)] text-[#f87171]',
+}
+
 const Billing = () => {
+  const { t } = useLanguage()
+  const b = t.billing
+
   return (
     <section id='experience' className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
-        <img
-          src={bill}
-          alt='experience'
-          className='w-[100%] h-[100%] relative z-[5] rounded-lg'
-        />
-        <div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient'/>
-        <div className='absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient'/>
+        <img src={bill} alt='experience' loading='lazy' decoding='async' className='w-[100%] h-[100%] relative z-[5] rounded-2xl' />
+        <div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient' />
+        <div className='absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient' />
       </div>
+
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Experience</h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          We possess extensive professional experience in <b>secure software development</b>, where we have successfully implemented robust strategies to identify and mitigate security vulnerabilities in large-scale projects. Additionally, our background in <b>Governance, Risk and Compliance (GRC)</b> roles within prominent corporations has equipped us with a comprehensive understanding of <b>regulatory requirements</b>, allowing us to adeptly navigate and ensure compliance in complex business environments.
+        <p className='font-poppins font-semibold text-[14px] text-secondary uppercase tracking-[3px] mb-3'>
+          {b.sectionLabel}
         </p>
-      </div>  
+        <h2 className={styles.heading2}>{b.heading}</h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>{b.p1}</p>
+        <p className={`${styles.paragraph} max-w-[470px] mt-4`}>{b.p2}</p>
+
+        <div className='flex flex-wrap gap-2 mt-6'>
+          {b.techItems.map(item => (
+            <span
+              key={item.label}
+              className={`font-poppins text-[13px] font-medium px-3 py-1 rounded-full border ${colorMap[item.color]}`}
+            >
+              {item.label}
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }

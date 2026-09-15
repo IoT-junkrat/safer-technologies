@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – FLARE by SAFER Technologies</title>
+  <meta name="description" content="Get help with the FLARE app. Browse FAQs, report issues, or contact the SAFER Technologies support team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:            #00040f;
+      --cyan:          #00f6ff;
+      --white:         #ffffff;
+      --dim:           rgba(255,255,255,0.7);
+      --border:        #3F3E45;
+      --text-gradient: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+      --card-bg:       linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+      --cyan-gradient: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+    }
+    html { scroll-behavior: smooth; }
+    body { background-color: var(--bg); color: var(--white); font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+
+    nav {
+      max-width: 1280px; margin: 0 auto; padding: 24px 64px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-brand {
+      font-size: 20px; font-weight: 700; text-decoration: none;
+      background: var(--text-gradient); -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 2px;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { color: var(--dim); text-decoration: none; font-size: 15px; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--cyan); }
+    @media (max-width: 768px) { nav { padding: 20px 24px; } .nav-links { display: none; } }
+
+    .page-header {
+      max-width: 860px; margin: 0 auto; padding: 60px 64px 48px;
+    }
+    .badge {
+      display: inline-block; background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+      border-radius: 8px; padding: 5px 14px; font-size: 13px; color: var(--cyan);
+      font-weight: 500; margin-bottom: 20px; letter-spacing: 0.5px;
+    }
+    .page-header h1 { font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+    .page-header p { font-size: 16px; color: var(--dim); line-height: 1.7; max-width: 540px; }
+    @media (max-width: 768px) { .page-header { padding: 40px 24px 32px; } }
+
+    .content { max-width: 860px; margin: 0 auto; padding: 0 64px 100px; }
+    @media (max-width: 768px) { .content { padding: 0 24px 80px; } }
+
+    /* Contact cards */
+    .contact-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-bottom: 64px;
+    }
+    .contact-card {
+      background: var(--card-bg); border-radius: 20px; padding: 28px 24px;
+      box-shadow: 0px 20px 100px -10px rgba(66,71,91,0.1);
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .contact-icon { font-size: 32px; }
+    .contact-card h3 { font-size: 17px; font-weight: 600; }
+    .contact-card p { font-size: 14px; color: var(--dim); line-height: 1.65; flex: 1; }
+    .contact-card a {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--cyan); text-decoration: none; font-size: 14px; font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .contact-card a:hover { opacity: 0.8; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+    /* Response time banner */
+    .response-banner {
+      background: rgba(0,246,255,0.06); border: 1px solid rgba(0,246,255,0.2);
+      border-radius: 12px; padding: 16px 22px; margin-bottom: 64px;
+      display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--dim);
+    }
+    .response-banner strong { color: var(--white); }
+
+    /* FAQ */
+    .section-title {
+      font-size: 24px; font-weight: 600; margin-bottom: 28px;
+      padding-bottom: 12px; border-bottom: 1px solid var(--border);
+    }
+
+    .faq-group { margin-bottom: 48px; }
+    .faq-group-label {
+      font-size: 13px; font-weight: 600; color: var(--cyan);
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0;
+    }
+    .faq-question {
+      width: 100%; background: none; border: none; color: var(--white);
+      font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 500;
+      text-align: left; padding: 18px 0; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      transition: color 0.2s;
+    }
+    .faq-question:hover { color: var(--cyan); }
+    .faq-question .chevron {
+      flex-shrink: 0; width: 20px; height: 20px; color: var(--dim);
+      transition: transform 0.3s;
+    }
+    .faq-answer {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s;
+    }
+    .faq-answer-inner {
+      padding-bottom: 18px; font-size: 14px; color: var(--dim); line-height: 1.75;
+    }
+    .faq-answer-inner a { color: var(--cyan); text-decoration: none; }
+    .faq-answer-inner a:hover { text-decoration: underline; }
+    .faq-answer-inner ul { padding-left: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+
+    .faq-item.open .faq-answer { max-height: 600px; }
+    .faq-item.open .chevron { transform: rotate(180deg); }
+    .faq-item.open .faq-question { color: var(--cyan); }
+
+    /* Delete account section */
+    .delete-section {
+      background: linear-gradient(125.17deg, #1a0a0a 0%, #11101d 100%);
+      border: 1px solid rgba(255,80,80,0.2);
+      border-radius: 16px; padding: 28px 32px; margin-bottom: 56px;
+    }
+    .delete-section h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+    .delete-section p { font-size: 14px; color: var(--dim); line-height: 1.7; margin-bottom: 14px; }
+    .delete-section ol { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .delete-section li { font-size: 14px; color: var(--dim); line-height: 1.65; }
+    .delete-section a { color: var(--cyan); text-decoration: none; }
+
+    footer {
+      max-width: 1280px; margin: 0 auto; padding: 40px 64px;
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+    }
+    footer p { font-size: 15px; color: var(--dim); }
+    .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+    .footer-links a { color: var(--dim); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--cyan); }
+    @media (max-width: 768px) { footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/flare/" class="nav-brand">🔥 FLARE</a>
+    <ul class="nav-links">
+      <li><a href="/flare/">App</a></li>
+      <li><a href="/flare/privacy/">Privacy</a></li>
+      <li><a href="/flare/terms/">Terms</a></li>
+      <li><a href="/">safer.network</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="badge">Support</div>
+    <h1>How can we help?</h1>
+    <p>Browse the FAQ below or reach out directly. We're a small team and we read every message.</p>
+  </div>
+
+  <div class="content">
+
+    <!-- Contact options -->
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h3>Email Support</h3>
+        <p>For account issues, bug reports, data requests, or anything else — email us directly.</p>
+        <a href="mailto:flare@safer.network">flare@safer.network →</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🗑️</div>
+        <h3>Delete My Account</h3>
+        <p>You can delete your account and all associated data from within the app, or by emailing us.</p>
+        <a href="#delete-account">See instructions →</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🔒</div>
+        <h3>Privacy &amp; Data</h3>
+        <p>Data access, correction, or deletion requests under GDPR. We respond within 30 days.</p>
+        <a href="/flare/privacy/">Privacy Policy →</a>
+      </div>
+    </div>
+
+    <div class="response-banner">
+      <span>⏱️</span>
+      <span><strong>Response time:</strong> We aim to reply to all support emails within <strong>2 business days</strong>.</span>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <!-- Getting Started -->
+    <div class="faq-group">
+      <div class="faq-group-label">Getting Started</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is FLARE?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            FLARE is a social photo-battle app. You submit photos to trending challenges in your area
+            and compete in 1v1 battles where the community votes. The more votes ("Flares") your photo earns,
+            the wider its geographic reach spreads — from your neighborhood to your city to the whole country.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I create an account?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Download FLARE from the App Store, open it, and tap "Create Account". You'll need a username,
+            email address, and password. No phone number required.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is FLARE free to use?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Yes. FLARE is free to download and use. The free version is supported by ads. A Premium
+            subscription removes ads, unlocks the ability to create your own Trends, and gives access
+            to additional profile customization.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I submit a photo to a Trend?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <ul>
+              <li>Tap the <strong>+ Create</strong> tab at the bottom of the app.</li>
+              <li>Browse active Trends near you and choose one.</li>
+              <li>Take a photo with your camera or pick one from your library.</li>
+              <li>Confirm and submit — your photo enters the battle queue immediately.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Battles & Voting -->
+    <div class="faq-group">
+      <div class="faq-group-label">Battles &amp; Voting</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How does voting work?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            In the Home feed you'll see two photos from the same Trend side by side. Tap the one you
+            prefer to cast a "Flare" vote. The next battle loads automatically. There's no limit to
+            how many battles you can vote on.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is the Flare-Radius?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Every photo starts with a small geographic radius — only people in your immediate area
+            see it in battles. As it earns more Flares (votes), the radius expands:
+            Neighborhood → City → Region → Country. High-performing photos can eventually be seen nationally.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I vote on my own photos?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            No. Your own photos never appear in your battle feed. You cannot vote on or interact
+            with your own submissions.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account & Privacy -->
+    <div class="faq-group">
+      <div class="faq-group-label">Account &amp; Privacy</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Why does FLARE need location access?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Location is used to show you local Trends and Battles relevant to your area, and to assign
+            your photos a starting geographic radius. We only request location <em>while the app is open</em>
+            — we never track you in the background. You can disable location in iOS Settings and manually
+            enter your city instead.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I reset my password?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            On the login screen, tap <strong>"Forgot Password?"</strong>. Enter your registered email address
+            and we'll send you a reset link. If the email doesn't arrive within a few minutes, check your
+            spam folder or contact <a href="mailto:flare@safer.network">flare@safer.network</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I report a user or inappropriate content?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Tap the <strong>⋯ menu</strong> on any photo or profile and select "Report". Choose the
+            reason that best describes the issue. Reports are reviewed by our moderation team.
+            For urgent matters (e.g. illegal content), email
+            <a href="mailto:flare@safer.network">flare@safer.network</a> directly.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I opt out of personalized ads?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            On iOS, go to <strong>Settings → Privacy &amp; Security → Tracking → FLARE</strong> and toggle
+            off "Allow Tracking". You will still see ads, but they will not be personalized.
+            See our <a href="/flare/privacy/#advertising">Privacy Policy</a> for full details.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Purchases -->
+    <div class="faq-group">
+      <div class="faq-group-label">Premium &amp; Purchases</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I restore my Premium subscription?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Go to <strong>Profile → Settings → Restore Purchases</strong>. Make sure you're logged in
+            with the same Apple ID used to purchase. If the issue persists, contact us with your
+            Apple Order ID.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I cancel my Premium subscription?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Subscriptions are managed through Apple. To cancel: <strong>iOS Settings → your name →
+            Subscriptions → FLARE → Cancel Subscription</strong>. You'll retain Premium access until
+            the end of the current billing period.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Account -->
+    <div class="delete-section" id="delete-account">
+      <h3>🗑️ How to Delete Your Account</h3>
+      <p>
+        You have the right to delete your account and all associated data at any time (GDPR Art. 17).
+        There are two ways to do this:
+      </p>
+      <p><strong>Option 1 — In-app (instant):</strong></p>
+      <ol>
+        <li>Open FLARE and go to your <strong>Profile</strong>.</li>
+        <li>Tap the <strong>Settings</strong> icon (top right).</li>
+        <li>Scroll to the bottom and tap <strong>"Delete Account"</strong>.</li>
+        <li>Confirm deletion. Your account and all data are permanently removed.</li>
+      </ol>
+      <br/>
+      <p><strong>Option 2 — By email:</strong></p>
+      <p>
+        Send a deletion request to <a href="mailto:flare@safer.network">flare@safer.network</a>
+        from the email address registered to your account. We will process your request within 30 days.
+      </p>
+      <br/>
+      <p style="font-size:13px;">
+        Note: Some data (e.g. purchase receipts) may be retained for legally required periods
+        even after account deletion. See our <a href="/flare/privacy/#retention">Privacy Policy</a> for details.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2024 SAFER Technologies UG (haftungsbeschränkt)</p>
+    <ul class="footer-links">
+      <li><a href="/flare/">FLARE App</a></li>
+      <li><a href="/flare/privacy/">Privacy Policy</a></li>
+      <li><a href="/flare/terms/">Terms of Use</a></li>
+      <li><a href="/#impressum">Impressum</a></li>
+      <li><a href="/">safer.network</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,22 +1,11 @@
-import { 
-  people01, 
-  people02, 
-  people03, 
-  facebook, 
-  instagram, 
-  linkedin, 
-  twitter, 
-  airbnb, 
-  binance, 
-  coinbase, 
-  dropbox, 
-  send, 
-  shield, 
+import {
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  send,
+  shield,
   star,
-  cern,
-  einsundeins,
-  mam,
-  liebherr
 } from "../assets";
 
 export const navLinks = [
@@ -26,15 +15,15 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Objectives",
+    title: "Services",
   },
   {
     id: "experience",
     title: "Experience",
   },
   {
-    id: "clients",
-    title: "Testimonials",
+    id: "industries",
+    title: "Industries",
   },
   {
     id: "contact",
@@ -46,55 +35,104 @@ export const navLinks = [
   },
 ];
 
+// category: 'security' | 'automation'
 export const features = [
+  // ── Cybersecurity ──────────────────────────────────────────────
   {
     id: "feature-1",
-    icon: star,
-    title: "Multiple years of cybersecurity experience",
+    icon: shield,
+    title: "IT Security & Secure Development",
     content:
-      "Expertise ranges from secure software development in IT to technical IoT and regulatory product cybersecurity knowledge.",
+      "Secure SDLC, code reviews, penetration testing, and vulnerability assessments for web, mobile, and cloud applications.",
+    accent: "cyan",
+    category: "security",
   },
   {
     id: "feature-2",
-    icon: star,
-    title: "Broad range of fields",
+    icon: shield,
+    title: "Product & IoT Cybersecurity",
     content:
-      "We consult you tailored to your needs in various topics.",
+      "End-to-end security for connected products, IoT and OT environments. Compliance with IEC 62443, MDR, and the EU Cyber Resilience Act.",
+    accent: "blue",
+    category: "security",
   },
   {
     id: "feature-3",
     icon: star,
-    title: "Cybersecurity as strategic necessity",
+    title: "GRC & Regulatory Compliance",
     content:
-      "Cybersecurity is a strategic necessity to pave the way for a resilient and prosperous digital future.",
+      "Gap analyses, risk assessments, and policy frameworks for ISO 27001, NIS2, TISAX, and EU regulatory requirements.",
+    accent: "green",
+    category: "security",
+  },
+  // ── Automation & Data Intelligence ────────────────────────────
+  {
+    id: "feature-4",
+    icon: send,
+    title: "Process Automation & Scripting",
+    content:
+      "Custom automation scripts and workflows for any business process — from data pipelines and reporting to operational tasks that free your team from manual work.",
+    accent: "amber",
+    category: "automation",
+  },
+  {
+    id: "feature-5",
+    icon: star,
+    title: "Web Crawling & Data Collection",
+    content:
+      "Scalable web crawlers that continuously gather market data, competitor pricing, product availability, and industry signals at scale — turning the open web into structured intelligence.",
+    accent: "purple",
+    category: "automation",
+  },
+  {
+    id: "feature-6",
+    icon: send,
+    title: "Data Analysis & Business Intelligence",
+    content:
+      "We transform raw crawled and collected data into clear, actionable insight. Statistical analysis, trend detection, and strategic reporting that surfaces what internal data alone cannot reveal.",
+    accent: "orange",
+    category: "automation",
   },
 ];
 
-export const feedback = [
+export const industries = [
   {
-    id: "feedback-1",
-    content:
-      "Exceptional expertise and unwavering commitment to safeguarding our digital assets.",
-    name: "R.M.",
-    title: "Key Account Manager",
-    img: people01,
+    id: "industry-1",
+    emoji: "💊",
+    title: "Pharmaceutical & E-Commerce",
+    subtitle: "Web Crawling, Sales Intelligence & Market Analysis",
+    description:
+      "Automated crawling of online pharmacy networks to map product availability, pricing dynamics, and competitor positioning across hundreds of platforms. Our analysis surfaced critical gaps invisible to internal stakeholders — transforming raw web data into clear, actionable sales strategy.",
+    tags: ["Web Crawling", "Sales Analytics", "Market Intelligence", "E-Commerce Data"],
+    pillar: "automation",
   },
   {
-    id: "feedback-2",
-    content:
-      "Impeccable service and a vigilant approach to cybersecurity.",
-    name: "A.M.",
-    title: "CISO",
-    img: people02,
+    id: "industry-2",
+    emoji: "⚙️",
+    title: "Machinery & Manufacturing",
+    subtitle: "OT/ICS & Industrial Product Security",
+    description:
+      "OT/ICS security assessments, IEC 62443 compliance, and product cybersecurity advisory for industrial machinery and manufacturing equipment. From design to CE marking.",
+    tags: ["IEC 62443", "OT/ICS Security", "CE Marking", "NIS2"],
+    pillar: "security",
   },
-
+  {
+    id: "industry-3",
+    emoji: "🚗",
+    title: "Automotive",
+    subtitle: "Connected Vehicle & Supply Chain Security",
+    description:
+      "Automotive cybersecurity per UNECE WP.29 / ISO/SAE 21434, TISAX assessments, and connected vehicle security architecture. Supporting OEMs and Tier-1 suppliers.",
+    tags: ["ISO/SAE 21434", "UNECE WP.29", "TISAX", "V2X Security"],
+    pillar: "security",
+  },
 ];
 
 export const stats = [
   {
     id: "stats-1",
-    title: "2024",
-    value: "Founded",
+    title: "Founded",
+    value: "2024",
   },
   {
     id: "stats-2",
@@ -103,8 +141,13 @@ export const stats = [
   },
   {
     id: "stats-3",
-    title: "European Organization & large industries",
-    value: "Experience",
+    title: "Industries",
+    value: "3+",
+  },
+  {
+    id: "stats-4",
+    title: "Years Experience",
+    value: "10+",
   },
 ];
 
@@ -114,7 +157,7 @@ export const footerLinks = [
     links: [
       {
         name: "",
-        link: ""
+        link: "",
       },
     ],
   },
@@ -142,4 +185,3 @@ export const socialMedia = [
     link: "https://www.linkedin.com/",
   },
 ];
-
