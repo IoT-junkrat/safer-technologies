@@ -13,13 +13,6 @@ import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 
-import einsundeins from "./1u1.png";
-import cern from "./cern.png";
-import liebherr from "./liebherr.svg";
-import mam from "./mam.png";
-
-
-
 export {
   bill,
   logo,
@@ -35,8 +28,4 @@ export {
   instagram,
   linkedin,
   twitter,
-  einsundeins,
-  cern,
-  liebherr,
-  mam
 };
