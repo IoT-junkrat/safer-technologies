@@ -23,17 +23,19 @@ const Hero = () => {
         </div>
 
         {/* Headline */}
-        <div className='flex flex-row justify-between items-center w-full'>
-          <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]'>
-            {h.headline1}<br className='sm:block hidden' />{' '}
-            <span className='text-gradient'>{h.headlineGrad}</span>
-          </h1>
-          <div className='ss:flex hidden md:mr-4 mr-0'>
-            <GetStarted />
+        <h1 className='w-full'>
+          <div className='flex flex-row justify-between items-center w-full'>
+            <span className='flex-1 min-w-0 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] break-words'>
+              {h.headline1}<br className='sm:block hidden' />{' '}
+              <span className='text-gradient'>{h.headlineGrad}</span>
+            </span>
+            <div className='ss:flex hidden md:mr-4 mr-0'>
+              <GetStarted />
+            </div>
           </div>
-        </div>
-        <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full'>
-          {h.headline2}
+          <span className='block font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full break-words'>
+            {h.headline2}
+          </span>
         </h1>
 
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>

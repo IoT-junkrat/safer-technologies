@@ -174,6 +174,49 @@ export const translations = {
       decline:  "Decline",
       moreInfo: "Privacy Policy",
     },
+
+    privacy: {
+      heading: "Privacy Policy",
+      updated: "Last updated: September 2026",
+      sections: [
+        {
+          heading: "Controller",
+          body: "The controller responsible for data processing on this website is SAFER Technologies UG (haftungsbeschränkt), Hauptstraße 35a, 77839 Lichtenau, Germany, represented by Dr. Pascal Oser. Contact: pascal@safer.network, +49 (0)151 57800439.",
+        },
+        {
+          heading: "Hosting",
+          body: "This website is hosted via GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA). When you access the site, GitHub automatically processes technical access data (e.g. IP address, date and time of access, file requested, browser used) in server log files to ensure secure and stable operation (Art. 6(1)(f) GDPR). Details: https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement",
+        },
+        {
+          heading: "Cookies & Local Storage",
+          body: "This site does not use tracking cookies before you consent. Two technically necessary entries are stored in your browser's local storage: your language preference (saferLang) and your cookie decision (saferCookieConsent). These remain on your device only and are not transmitted to us. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a functional, user-friendly website).",
+        },
+        {
+          heading: "Google Analytics",
+          body: "If you consent via the cookie banner, we use Google Analytics 4 (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland; Property ID: G-FSY9VK13T0) to analyse how the site is used. This processes usage data such as pages viewed, session duration, device type, and an approximate location derived from your IP address. Google Analytics 4 does not store full IP addresses by default. Data may be transferred to the US; Google relies on the EU Standard Contractual Clauses for this. You can withdraw your consent at any time, with effect for the future, by reopening the cookie banner (clear this site's local storage in your browser) or choosing \"Decline\".",
+        },
+        {
+          heading: "Language Detection via IP Address",
+          body: "On your first visit — if no stored preference and no German browser language is detected — we use the third-party services ipapi.co and api.country.is to estimate your approximate location from your IP address, so the site can default to German or English automatically. Your IP address is transmitted to these services for this purpose but is not stored by us. Legal basis: our legitimate interest in presenting the site in an appropriate language (Art. 6(1)(f) GDPR). You can override the automatic detection at any time using the DE/EN switch.",
+        },
+        {
+          heading: "Contacting Us",
+          body: "If you contact us by email or via the virtual business card, we process the data you provide (e.g. name, email address, message content) solely to handle your enquiry (Art. 6(1)(b) GDPR). This site has no server-side contact form — emails are sent directly from your own email client.",
+        },
+        {
+          heading: "Your Rights",
+          body: "You have the right to access, rectify, erase, and restrict the processing of your personal data, as well as a right to data portability and objection (Art. 15–21 GDPR). You also have the right to lodge a complaint with a data protection supervisory authority, e.g. the Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg.",
+        },
+        {
+          heading: "SSL Encryption",
+          body: "For security and to protect the transmission of confidential content, this site uses SSL/TLS encryption, recognisable by \"https://\" in the address bar.",
+        },
+        {
+          heading: "Changes to This Policy",
+          body: "We will update this privacy policy whenever the underlying data processing changes.",
+        },
+      ],
+    },
   },
 
   // ─────────────────────────────────────────────────────────────
@@ -217,7 +260,7 @@ export const translations = {
       sectionLabel: "Was wir tun",
       heading:      "Zwei Säulen.\nEin Partner.",
       description:
-        "Wir arbeiten in zwei eigenständigen Bereichen – experte Cybersicherheitsberatung und datengetriebene Automatisierung – jeweils mit der gleichen Tiefe und Präzision. Viele Projekte verbinden beide.",
+        "Wir arbeiten in zwei eigenständigen Bereichen – erfahrene Cybersicherheitsberatung und datengetriebene Automatisierung – jeweils mit der gleichen Tiefe und Präzision. Viele Projekte verbinden beide.",
       pillar1Label: "Säule 1 · Cybersicherheit",
       pillar1Title: "Schützen.",
       pillar1Desc:
@@ -351,6 +394,49 @@ export const translations = {
       accept:   "Akzeptieren",
       decline:  "Ablehnen",
       moreInfo: "Datenschutz",
+    },
+
+    privacy: {
+      heading: "Datenschutzerklärung",
+      updated: "Stand: September 2026",
+      sections: [
+        {
+          heading: "Verantwortlicher",
+          body: "Verantwortlich für die Datenverarbeitung auf dieser Website ist SAFER Technologies UG (haftungsbeschränkt), Hauptstraße 35a, 77839 Lichtenau, Deutschland, vertreten durch Dr. Pascal Oser. Kontakt: pascal@safer.network, +49 (0)151 57800439.",
+        },
+        {
+          heading: "Hosting",
+          body: "Diese Website wird über GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA) gehostet. Beim Aufruf der Seite verarbeitet GitHub automatisch technische Zugriffsdaten (u. a. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Datei, verwendeter Browser) in Server-Logfiles, um den sicheren und stabilen Betrieb der Website zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO). Details: https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement",
+        },
+        {
+          heading: "Cookies & lokaler Speicher",
+          body: "Diese Website setzt keine Tracking-Cookies, bevor Sie eingewilligt haben. Zwei technisch notwendige Einträge werden im lokalen Speicher (localStorage) Ihres Browsers abgelegt: Ihre Spracheinstellung (saferLang) und Ihre Cookie-Entscheidung (saferCookieConsent). Diese verbleiben ausschließlich auf Ihrem Gerät und werden nicht an uns übertragen. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen, nutzerfreundlichen Website).",
+        },
+        {
+          heading: "Google Analytics",
+          body: "Sofern Sie über den Cookie-Banner zugestimmt haben, setzen wir Google Analytics 4 (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland; Property-ID: G-FSY9VK13T0) zur Analyse der Websitenutzung ein. Dabei werden Nutzungsdaten wie aufgerufene Seiten, Verweildauer, Gerätetyp und ein ungefährer Standort (abgeleitet aus der IP-Adresse) verarbeitet. Google Analytics 4 speichert dabei standardmäßig keine vollständigen IP-Adressen. Es kann zu einer Datenübermittlung in die USA kommen; Google stützt sich hierfür auf die EU-Standardvertragsklauseln. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie den Cookie-Banner erneut aufrufen (lokalen Speicher dieser Seite in Ihrem Browser löschen) oder \"Ablehnen\" wählen.",
+        },
+        {
+          heading: "Spracherkennung über IP-Adresse",
+          body: "Beim erstmaligen Besuch ermitteln wir – sofern keine gespeicherte Präferenz und keine deutsche Browsersprache vorliegen – über die Drittanbieter-Dienste ipapi.co und api.country.is eine grobe Standortschätzung anhand Ihrer IP-Adresse, um die Seite automatisch auf Deutsch oder Englisch anzuzeigen. Ihre IP-Adresse wird hierzu an diese Dienste übermittelt, jedoch nicht von uns gespeichert. Rechtsgrundlage ist unser berechtigtes Interesse an einer sprachlich passenden Darstellung (Art. 6 Abs. 1 lit. f DSGVO). Sie können die automatische Erkennung jederzeit über den DE/EN-Schalter überschreiben.",
+        },
+        {
+          heading: "Kontaktaufnahme",
+          body: "Wenn Sie uns per E-Mail oder über die virtuelle Visitenkarte kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Daten (z. B. Name, E-Mail-Adresse, Nachrichteninhalt) ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Diese Website enthält kein serverseitiges Kontaktformular – E-Mails werden direkt über Ihr eigenes E-Mail-Programm versendet.",
+        },
+        {
+          heading: "Ihre Rechte",
+          body: "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie ein Recht auf Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO). Zudem steht Ihnen ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde zu, z. B. beim Landesbeauftragten für den Datenschutz und die Informationsfreiheit Baden-Württemberg.",
+        },
+        {
+          heading: "SSL-Verschlüsselung",
+          body: "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL/TLS-Verschlüsselung, erkennbar am \"https://\" in der Adresszeile.",
+        },
+        {
+          heading: "Änderungen dieser Erklärung",
+          body: "Wir passen diese Datenschutzerklärung an, sobald sich die zugrunde liegende Datenverarbeitung ändert.",
+        },
+      ],
     },
   },
 }
