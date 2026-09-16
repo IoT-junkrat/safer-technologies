@@ -31,14 +31,24 @@ export const LanguageProvider = ({ children }) => {
     fetch('https://ipapi.co/json/', { signal: controller.signal })
       .then(r => r.json())
       .then(data => {
+        // ipapi.co returns HTTP 200 even on failure (rate limit, reserved/
+        // tunneled IP, etc.), signalled only via `error: true` in the body —
+        // treat that the same as a network failure and fall through.
+        if (data.error || !data.country_code) throw new Error(data.reason || 'ipapi.co error')
         clearTimeout(timer)
         setLang(DACH.includes(data.country_code) ? 'de' : 'en')
       })
       .catch(() => {
-        // Fallback: try Accept-Language header via a simpler service
-        fetch('https://api.country.is/', { signal: AbortSignal ? undefined : undefined })
+        // Fallback: a simpler geo-IP service
+        const fallbackController = new AbortController()
+        const fallbackTimer = setTimeout(() => fallbackController.abort(), 3000)
+        fetch('https://api.country.is/', { signal: fallbackController.signal })
           .then(r => r.json())
-          .then(data => setLang(DACH.includes(data.country) ? 'de' : 'en'))
+          .then(data => {
+            clearTimeout(fallbackTimer)
+            if (!data.country) throw new Error('country.is error')
+            setLang(DACH.includes(data.country) ? 'de' : 'en')
+          })
           .catch(() => setLang('en'))
       })
 
