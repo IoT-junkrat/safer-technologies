@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>FLARE – Open in app</title>
+  <meta name="apple-itunes-app" content="app-id=6761497929" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0a0a0a; color: #fff; font-family: 'Poppins', system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center; }
+    .brand { font-size: 28px; font-weight: 700; letter-spacing: 8px; margin-bottom: 8px; }
+    .tag { color: rgba(255,255,255,0.55); font-size: 13px; letter-spacing: 3px; margin-bottom: 28px; }
+    h1 { font-size: 22px; margin-bottom: 8px; }
+    p { color: rgba(255,255,255,0.7); max-width: 420px; line-height: 1.5; margin-bottom: 20px; }
+    .preview { display: flex; gap: 10px; margin-bottom: 20px; justify-content: center; }
+    .preview figure { width: 150px; }
+    .preview img { width: 150px; height: 190px; object-fit: cover; border-radius: 16px; border: 1px solid #333; background: #1a1a1a; }
+    .preview figcaption { margin-top: 6px; font-size: 12px; color: rgba(255,255,255,0.7); }
+    .vs { align-self: center; font-weight: 700; color: #ff4d00; }
+    .btn { display: inline-block; padding: 14px 28px; border-radius: 14px; font-weight: 700; text-decoration: none; margin: 6px; }
+    .primary { background: linear-gradient(90deg, #ff4d00, #ff0080); color: #fff; }
+    .secondary { border: 1px solid #444; color: #fff; }
+    .small { margin-top: 18px; font-size: 12px; color: rgba(255,255,255,0.45); }
+    a.home { color: #ff4d00; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="brand">FLARE</div>
+  <div class="tag">BATTLE. VOTE. REACH.</div>
+
+  <main id="share" hidden>
+    <h1 id="title">Open in FLARE</h1>
+    <p id="subtitle">This content lives in the FLARE app.</p>
+    <div class="preview" id="preview" hidden></div>
+    <a class="btn primary" id="open" href="#">Open in FLARE</a>
+    <a class="btn secondary" href="https://apps.apple.com/app/id6761497929">Get the app</a>
+    <div class="small">Already installed? Tap "Open in FLARE". Not yet? Get the app first, then open this link again.</div>
+  </main>
+
+  <main id="notfound" hidden>
+    <h1>Page not found</h1>
+    <p>This page does not exist.</p>
+    <a class="home" href="/">Go to safer.network</a>
+  </main>
+
+  <script>
+    (function () {
+      var API = 'https://api.safer.network/api/v1';
+      var m = location.pathname.match(/^\/flare\/(post|battle|trend|user)\/([0-9a-fA-F-]{36})\/?$/);
+      if (!m) { document.getElementById('notfound').hidden = false; return; }
+      var kind = m[1], id = m[2];
+      var labels = { post: 'a post', battle: 'a battle', trend: 'a trend', user: 'a profile' };
+      document.getElementById('share').hidden = false;
+      document.getElementById('title').textContent = 'Someone shared ' + labels[kind] + ' with you';
+      document.getElementById('open').href = 'flare://' + kind + '/' + id;
+
+      function safeSrc(u) { return typeof u === 'string' && /^https:\/\//.test(u) ? u : null; }
+      function fig(src, caption) {
+        var f = document.createElement('figure');
+        var s = safeSrc(src);
+        if (s) { var i = document.createElement('img'); i.src = s; i.alt = ''; f.appendChild(i); }
+        var c = document.createElement('figcaption'); c.textContent = caption || ''; f.appendChild(c);
+        return f;
+      }
+      var box = document.getElementById('preview');
+      if (kind === 'battle' || kind === 'post') {
+        fetch(API + '/' + kind + 's/' + id).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+          var d = j && j.data; if (!d) return;
+          if (kind === 'battle') {
+            box.appendChild(fig(d.postAImage, d.postAUsername ? '@' + d.postAUsername : ''));
+            var vs = document.createElement('div'); vs.className = 'vs'; vs.textContent = 'VS'; box.appendChild(vs);
+            box.appendChild(fig(d.postBImage, d.postBUsername ? '@' + d.postBUsername : ''));
+          } else {
+            box.appendChild(fig(d.imageUrl, d.caption || ''));
+          }
+          box.hidden = false;
+          document.getElementById('subtitle').textContent = 'Open the app to vote and join the battle.';
+        }).catch(function () {});
+      }
+    })();
+  </script>
+</body>
+</html>
