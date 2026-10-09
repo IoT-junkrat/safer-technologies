@@ -1,17 +1,13 @@
-import React, { useEffect, useState, lazy, Suspense } from 'react'
-import { Hero, Navbar, Stats, Business, CookieConsent } from './components'
+import React, { useEffect, useState } from 'react'
+import {
+  Hero, Navbar, Stats, Business, Billing, Testimonials as Industries,
+  CTA, Footer, Impressum, CookieConsent,
+} from './components'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import styles from './style'
 import uparrowimg from './assets/uparrow.png'
 import { LanguageProvider } from './context/LanguageContext'
 import SEOMeta from './components/SEOMeta'
-
-// Lazy-load below-the-fold sections to reduce initial bundle
-const Billing     = lazy(() => import('./components/Billing'))
-const Industries  = lazy(() => import('./components/Testimonials'))
-const CTA         = lazy(() => import('./components/CTA'))
-const Footer      = lazy(() => import('./components/Footer'))
-const Impressum   = lazy(() => import('./components/impressum'))
-const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'))
 
 const App = () => {
   const [showTopButton, setShowTopButton] = useState(false)
@@ -49,14 +45,12 @@ const App = () => {
           <div className={`${styles.boxWidth}`}>
             <Stats />
             <Business />
-            <Suspense fallback={null}>
-              <Billing />
-              <Industries />
-              <CTA />
-              <Footer />
-              <Impressum />
-              <PrivacyPolicy />
-            </Suspense>
+            <Billing />
+            <Industries />
+            <CTA />
+            <Footer />
+            <Impressum />
+            <PrivacyPolicy />
           </div>
         </div>
 
