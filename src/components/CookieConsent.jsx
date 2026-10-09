@@ -40,14 +40,22 @@ const CookieConsent = () => {
     // (render, image decode, paint). Showing it earlier meant it appeared while
     // the main thread was still busy, so it looked frozen / unclickable.
     let cancelled = false
-    const show = () => {
-      if (cancelled) return
+    let shown = false
+    const cap = setTimeout(() => show(), 4000)
+    // Runs exactly once (load event OR the 4s cap, whichever comes first) and
+    // re-checks storage, so a banner the visitor already answered never returns.
+    function show() {
+      if (cancelled || shown) return
+      shown = true
+      clearTimeout(cap)
+      window.removeEventListener('load', show)
       const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200))
-      idle(() => { if (!cancelled) setVisible(true) })
+      idle(() => {
+        if (!cancelled && !localStorage.getItem(CONSENT_KEY)) setVisible(true)
+      })
     }
-    const cap = setTimeout(show, 4000)
     if (document.readyState === 'complete') show()
-    else window.addEventListener('load', show, { once: true })
+    else window.addEventListener('load', show)
 
     return () => {
       cancelled = true
