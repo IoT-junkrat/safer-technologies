@@ -67,7 +67,7 @@ const Business = () => {
         </p>
         <h2 className={styles.heading2}>
           {b.heading.split('\n').map((line, i) => (
-            <span key={i}>{line}{i === 0 && <br className='sm:block hidden' />}</span>
+            <span key={i}>{line}{i === 0 && <>{' '}<br className='sm:block hidden' /></>}</span>
           ))}
         </h2>
         <p className={`${styles.paragraph} max-w-[560px] mt-4`}>

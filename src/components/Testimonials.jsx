@@ -66,7 +66,7 @@ const Testimonials = () => {
           </p>
           <h2 className={styles.heading2}>
             {ind.heading.split('\n').map((line, i) => (
-              <span key={i}>{line}{i === 0 && <br className='sm:block hidden' />}</span>
+              <span key={i}>{line}{i === 0 && <>{' '}<br className='sm:block hidden' /></>}</span>
             ))}
           </h2>
         </div>
