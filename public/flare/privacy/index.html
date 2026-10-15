@@ -231,7 +231,7 @@
       We take your privacy seriously. This policy explains what data FLARE collects,
       why we collect it, how it is used, and your rights as a user under the GDPR.
     </p>
-    <span class="last-updated">Last updated: April 1, 2025</span>
+    <span class="last-updated">Last updated: October 15, 2026</span>
   </div>
 
   <div class="content">
@@ -296,12 +296,33 @@
 
       <h3>2.3 Location Data</h3>
       <p>
-        FLARE uses your approximate location to show you local trends and battles and to assign
-        your content to a geographic radius. Location is only collected while the app is in use
-        (<em>When In Use</em> permission). We do not track location in the background.
-        You can disable location access in your iOS Settings at any time — the app will fall back
-        to a manually entered city.
+        FLARE uses location in three clearly separated ways. We collect location only while the app is
+        open (<em>When In Use</em> permission); we do not track your location in the background. You can
+        switch location access off in your iOS Settings at any time.
       </p>
+      <ul>
+        <li>
+          <strong>Your approximate location</strong> is used to assign you to a city, region and country
+          (for local rankings) and to show local content. While the app is open, it is refreshed from time to
+          time (when you moved about 500 m or after about 30 minutes). We store only your <em>last known
+          location</em> with your account. <strong>Other users, including your friends, cannot see it.</strong>
+        </li>
+        <li>
+          <strong>The location of a photo.</strong> When you upload a photo, the position at the moment of
+          the upload is saved once with that photo. <strong>Only your accepted friends</strong> can see this
+          upload location, on the friends map. It is not shown to other users, in public lists or in
+          rankings, and it is never your live position. You decide for every photo with the switch
+          &ldquo;Share location with friends&rdquo; on the upload screen; if it is off, no location is stored
+          with the photo. When you delete a photo or your account, its location is erased.
+        </li>
+        <li>
+          <strong>Local push.</strong> A friend who is near a photo&rsquo;s upload location (within about 1 km)
+          can push it. To check this, the app sends the friend&rsquo;s current position once when pushing;
+          we compare it with the photo&rsquo;s location, store it only to prevent abuse and delete it when the
+          photo or the account is deleted. The owner of the photo sees that a friend pushed it, but not where
+          that friend was.
+        </li>
+      </ul>
 
       <h3>2.4 Device &amp; Technical Data</h3>
       <ul>
@@ -343,7 +364,8 @@
         </thead>
         <tbody>
           <tr><td>Providing the core app features (account, battles, trends, rankings)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
-          <tr><td>Location-based content discovery</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
+          <tr><td>Location-based content discovery and local rankings (approximate location)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
+          <tr><td>Sharing the upload location of a photo with friends (friends map, local push)</td><td>Art. 6(1)(a) — Consent (per photo switch and iOS location permission, revocable at any time)</td></tr>
           <tr><td>Security, fraud prevention, rate-limiting</td><td>Art. 6(1)(f) — Legitimate interests</td></tr>
           <tr><td>Sending transactional emails (account confirmation, support replies)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
           <tr><td>Displaying non-personalized ads (AdMob)</td><td>Art. 6(1)(f) — Legitimate interests</td></tr>
@@ -438,7 +460,7 @@
         <tbody>
           <tr><td>Account data</td><td>Until account deletion, plus 30 days grace period</td></tr>
           <tr><td>Photos &amp; user-generated content</td><td>Until deleted by user or account deletion</td></tr>
-          <tr><td>Location data</td><td>Last known location retained while account is active; deleted on account deletion</td></tr>
+          <tr><td>Location data</td><td>Last known location retained while the account is active; photo locations and push positions until the photo or the account is deleted</td></tr>
           <tr><td>Server logs / IP addresses</td><td>Maximum 14 days for security purposes</td></tr>
           <tr><td>Purchase receipts</td><td>As required by tax law (10 years in Germany per HGB)</td></tr>
           <tr><td>Support correspondence</td><td>3 years from last contact</td></tr>
