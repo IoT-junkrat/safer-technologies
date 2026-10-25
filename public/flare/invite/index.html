@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>FLARE – Du wurdest eingeladen</title>
+  <meta name="apple-itunes-app" content="app-id=6761497929" />
+  <meta property="og:title" content="Battle mich bei FLARE! ⚡" />
+  <meta property="og:description" content="Wer hat das bessere Foto? Hol dir FLARE und sichere dir einen Extra-Push." />
+  <meta property="og:image" content="https://safer.network/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0a0a0a; color: #fff; font-family: 'Poppins', system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center;
+      background-image: radial-gradient(60% 40% at 50% 0%, rgba(255,77,0,.25), transparent), radial-gradient(50% 35% at 50% 100%, rgba(155,0,255,.2), transparent); }
+    .brand { font-size: 28px; font-weight: 800; letter-spacing: 8px; margin-bottom: 6px; }
+    .tag { color: rgba(255,255,255,.55); font-size: 13px; letter-spacing: 3px; margin-bottom: 28px; }
+    h1 { font-size: 24px; margin-bottom: 10px; }
+    p { color: rgba(255,255,255,.75); max-width: 420px; line-height: 1.55; margin-bottom: 20px; }
+    .code { font-size: 38px; font-weight: 800; letter-spacing: 8px; color: #ff4d00; margin: 6px 0 4px; }
+    .hint { font-size: 12px; color: rgba(255,255,255,.5); margin-bottom: 22px; }
+    .btn { display: block; width: 280px; padding: 15px 20px; border-radius: 14px; font-weight: 700; text-decoration: none; border: 0; cursor: pointer; font-family: inherit; font-size: 16px; }
+    .primary { background: linear-gradient(90deg, #ff4d00, #ff0080); color: #fff; }
+    .secondary { background: #1a1a1a; color: #fff; border: 1px solid #333; margin-top: 12px; }
+    .ok { color: #00ff87; font-size: 13px; height: 18px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="brand">FLARE</div>
+  <div class="tag">BATTLE. BURN. RISE.</div>
+  <h1>Ein Freund hat dich eingeladen ⚡</h1>
+  <p>Zwei Fotos, ein Wisch, ein Sieger. Mach mit – mit diesem Code bekommt ihr beide Extra-Pushes für die Freunde-Karte.</p>
+  <div class="code" id="code">······</div>
+  <div class="hint">Gib den Code bei der Registrierung ein (oder tippe auf den Button – dann ist er in der Zwischenablage).</div>
+  <a class="btn primary" id="store" href="https://apps.apple.com/app/id6761497929">App laden</a>
+  <button class="btn secondary" id="copy">Code kopieren</button>
+  <div class="ok" id="ok"></div>
+  <script>
+    var m = location.search.match(/[?&](?:c|ref)=([A-Za-z0-9]{4,12})/);
+    var code = m ? m[1].toUpperCase() : '';
+    document.getElementById('code').textContent = code || '—';
+    function copy() { if (!code) return; try { navigator.clipboard.writeText(code); document.getElementById('ok').textContent = 'Code kopiert ✓'; } catch (e) {} }
+    document.getElementById('copy').addEventListener('click', copy);
+    document.getElementById('store').addEventListener('click', copy);
+    if (!code) { document.getElementById('copy').style.display = 'none'; }
+  </script>
+</body>
+</html>
