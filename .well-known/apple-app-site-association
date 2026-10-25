@@ -7,7 +7,8 @@
           { "/": "/flare/post/*", "comment": "Shared post" },
           { "/": "/flare/battle/*", "comment": "Shared battle" },
           { "/": "/flare/trend/*", "comment": "Shared trend" },
-          { "/": "/flare/user/*", "comment": "Shared profile" }
+          { "/": "/flare/user/*", "comment": "Shared profile" },
+          { "/": "/flare/invite/*", "comment": "Friend invite" }
         ]
       }
     ]
