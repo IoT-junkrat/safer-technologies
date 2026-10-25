@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FLARE – Photo Battles. Local Vibes.</title>
-  <meta name="description" content="FLARE is the social photo-battle app. Compete in 1v1 photo trends, earn Flares from the community, and spread your content from your neighborhood to the world." />
+  <title>FLARE – Photo Battles. Travel the World.</title>
+  <meta name="description" content="FLARE is the photo-battle app where your pictures travel. Win battles, let friends visit the spot and push your photo – and watch it show up in other cities and on other continents." />
   <link rel="canonical" href="https://safer.network/flare" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -477,7 +477,16 @@
     @media (max-width: 768px) {
       footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
     }
-  </style>
+  
+    /* ─── JOURNEY + SCREENSHOTS ─── */
+    .journey-visual { max-width: 920px; margin: 0 auto; padding: 18px; border: 1px solid var(--border); border-radius: 24px; background: rgba(255,255,255,0.03); }
+    .journey-visual svg { width: 100%; height: auto; display: block; }
+    .shots { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; }
+    .shots figure { width: 230px; }
+    .shots img { width: 100%; height: auto; border-radius: 28px; border: 1px solid var(--border); background: #111; display: block; box-shadow: 0 20px 50px rgba(0,0,0,.45); }
+    .shots figcaption { margin-top: 12px; text-align: center; color: var(--dim); font-size: 14px; font-weight: 500; }
+    @media (max-width: 720px) { .shots figure { width: 44%; } }
+</style>
 </head>
 <body>
 
@@ -498,21 +507,21 @@
     <div class="hero-content">
       <div class="hero-badge">
         <span>🔥 Social Photo Battles</span>
-        <strong>Coming to App Store</strong>
+        <strong>Now on the App Store</strong>
       </div>
-      <h1>Post. Battle.<br/><span class="gradient">Go Viral.</span></h1>
-      <p class="hero-sub">Your neighborhood. Your trends.</p>
+      <h1>Post. Battle.<br/><span class="gradient">Travel the World.</span></h1>
+      <p class="hero-sub">Your photo starts at your doorstep. Your friends carry it around the globe.</p>
       <p>
-        Submit photos to trending challenges, compete in 1v1 battles,
-        and earn Flares from the community. The more votes your photo gets,
-        the further your Flare-Radius spreads — from your block to the world.
+        Swipe through 1v1 photo battles, take on the daily challenge and win votes.
+        Then the real game begins: friends travel to the place where your photo was taken
+        and <strong>push</strong> it &mdash; so it shows up in cities far away, even on other continents.
       </p>
       <div class="hero-cta">
-        <a href="#download" class="btn-store" id="appstore-hero">
+        <a href="https://apps.apple.com/app/id6761497929" class="btn-store" id="appstore-hero">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           App Store
         </a>
-        <a href="#how-it-works" class="btn-outline">See how it works</a>
+        <a href="#journey" class="btn-outline">See how photos travel</a>
       </div>
     </div>
 
@@ -552,12 +561,12 @@
       <div class="stat-label">Photo battles</div>
     </div>
     <div class="stat-item">
-      <div class="stat-value">Geo</div>
-      <div class="stat-label">Radius expansion</div>
+      <div class="stat-value">+50 km</div>
+      <div class="stat-label">per local push</div>
     </div>
     <div class="stat-item">
-      <div class="stat-value">Local</div>
-      <div class="stat-label">Leaderboards</div>
+      <div class="stat-value">Daily</div>
+      <div class="stat-label">Challenge &amp; streaks</div>
     </div>
     <div class="stat-item">
       <div class="stat-value">Free</div>
@@ -569,37 +578,100 @@
   <div class="section-wrap" id="how-it-works">
     <div class="section-header">
       <h2>How FLARE works</h2>
-      <p>Three seconds. Tap. Done. The fastest social loop you've ever experienced.</p>
+      <p>Swipe. Vote. Travel. The fastest social loop you've ever experienced.</p>
     </div>
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-num">Step 01</div>
         <div class="step-icon">📸</div>
         <h3>Join a Trend</h3>
-        <p>Browse active photo trends in your area — "Outfit Check", "Waldvibes", "Haustier Battle" and more. Pick one and submit your best shot.</p>
+        <p>Take on the daily challenge or pick from dozens of trends &mdash; sunsets, street food, muscle cars, anime, hiking &hellip; Shoot at a real place: FLARE saves where your photo was taken.</p>
       </div>
       <div class="step-card">
         <div class="step-num">Step 02</div>
         <div class="step-icon">⚡</div>
         <h3>Battle &amp; Vote</h3>
-        <p>Two photos. One tap. Swipe through an endless feed of 1v1 battles. Vote for your favorite and keep the loop going.</p>
+        <p>Two photos. One swipe. Swipe up or down to pick your favorite &mdash; every vote you give also earns you pushes (10 votes = 1 push).</p>
       </div>
       <div class="step-card">
         <div class="step-num">Step 03</div>
         <div class="step-icon">🗺️</div>
-        <h3>Spread Your Radius</h3>
-        <p>Every Flare (vote) you earn expands your photo's reach — from your neighborhood to your city, region, and beyond.</p>
+        <h3>Push &amp; Travel</h3>
+        <p>Visit a friend's photo spot and push it: <strong>+50 km reach instantly.</strong> Photos hop from city to city &mdash; and keep going.</p>
       </div>
+    </div>
+  </div>
+
+  <!-- JOURNEY -->
+  <div class="section-wrap" id="journey">
+    <div class="section-header">
+      <h2>Photos that travel. Friends that explore.</h2>
+      <p>The further your friends go, the further your photo spreads &mdash; from Offenburg to Berlin, New York and Tokyo.</p>
+    </div>
+    <div class="journey-visual" role="img" aria-label="A photo hops from city to city across the world as friends push it">
+      <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff4d00"/><stop offset="1" stop-color="#ff0080"/></linearGradient>
+          <radialGradient id="dot"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#ff4d00"/></radialGradient>
+        </defs>
+        <g fill="rgba(255,255,255,0.06)">
+          <ellipse cx="190" cy="120" rx="120" ry="70"/><ellipse cx="265" cy="225" rx="55" ry="42"/>
+          <ellipse cx="470" cy="105" rx="75" ry="50"/><ellipse cx="490" cy="205" rx="55" ry="55"/>
+          <ellipse cx="680" cy="115" rx="130" ry="62"/><ellipse cx="770" cy="235" rx="45" ry="28"/>
+        </g>
+        <path d="M455 112 Q 330 20 205 108" fill="none" stroke="url(#arc)" stroke-width="3" stroke-dasharray="6 6"/>
+        <path d="M455 112 Q 560 40 700 105" fill="none" stroke="url(#arc)" stroke-width="3" stroke-dasharray="6 6"/>
+        <path d="M455 112 Q 470 150 492 195" fill="none" stroke="url(#arc)" stroke-width="3" stroke-dasharray="6 6"/>
+        <g font-family="Poppins,sans-serif" font-size="13" fill="#fff" font-weight="600">
+          <circle cx="455" cy="112" r="11" fill="url(#dot)"/><text x="470" y="100">Your city</text>
+          <circle cx="205" cy="108" r="8" fill="url(#dot)"/><text x="150" y="92">New York</text>
+          <circle cx="700" cy="105" r="8" fill="url(#dot)"/><text x="712" y="94">Tokyo</text>
+          <circle cx="492" cy="195" r="8" fill="url(#dot)"/><text x="505" y="212">Cape Town</text>
+        </g>
+        <text x="455" y="278" text-anchor="middle" font-family="Poppins,sans-serif" font-size="12" fill="rgba(255,255,255,.55)">Every local push adds +50 km of reach &middot; reach fades again, so keep traveling</text>
+      </svg>
+    </div>
+    <div class="steps-grid" style="margin-top:36px;">
+      <div class="step-card">
+        <div class="step-icon">📍</div>
+        <h3>Go there</h3>
+        <p>Friends' photos appear on the map with a 1&nbsp;km push zone. Get close &mdash; or hop on a train, plane or bike.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">🚀</div>
+        <h3>Push it</h3>
+        <p>Give the photo an instant +50&nbsp;km reach boost. Earn pushes by voting; up to 5 a day.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">🌍</div>
+        <h3>Watch it travel</h3>
+        <p>The more places it is pushed from, the more cities and continents see it in their battles and rankings.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="section-wrap" id="screens">
+    <div class="section-header">
+      <h2>See it in action</h2>
+      <p>Battles, trends, rankings &mdash; and your own travelling photos.</p>
+    </div>
+    <div class="shots">
+      <figure><img src="/flare/img/02-battle.jpg" alt="FLARE battle: two photos, swipe to vote" loading="lazy"/><figcaption>Swipe to vote</figcaption></figure>
+      <figure><img src="/flare/img/03-trends.jpg" alt="FLARE trends list" loading="lazy"/><figcaption>Dozens of trends</figcaption></figure>
+      <figure><img src="/flare/img/04-ranking.jpg" alt="FLARE city, country and global rankings" loading="lazy"/><figcaption>City, country, world</figcaption></figure>
+      <figure><img src="/flare/img/05-profile.jpg" alt="FLARE profile with badges" loading="lazy"/><figcaption>Fame &amp; badges</figcaption></figure>
     </div>
   </div>
 
   <!-- FEATURES -->
   <div class="two-col" id="features">
     <div class="col-info">
-      <h2>Made for your<br/>community.</h2>
+      <h2>Made for explorers<br/>and communities.</h2>
       <p>
-        FLARE is hyper-local by design. Content starts small and earns its way to a wider audience.
-        No algorithm gatekeeping — pure community votes decide who goes viral.
+        FLARE starts hyper-local and rewards people who go places. Content earns its way to a wider
+        audience through votes <em>and</em> through friends who visit and push it.
+        No algorithm gatekeeping &mdash; people decide who travels.
       </p>
     </div>
     <div class="feature-list">
@@ -613,15 +685,22 @@
       <div class="feat-card">
         <div class="feat-icon">🔥</div>
         <div>
-          <h4>Flare-Radius Algorithm</h4>
-          <p>The more votes your photo earns, the wider its geographic reach. Earn your way from block to country.</p>
+          <h4>Push &amp; Radius</h4>
+          <p>Votes widen your photo's reach, local pushes boost it instantly. From your block to other countries and continents.</p>
         </div>
       </div>
       <div class="feat-card">
         <div class="feat-icon">🎯</div>
         <div>
-          <h4>Trend Discovery</h4>
-          <p>Premium users and the community create themed trends. Find what's hot near you right now.</p>
+          <h4>Daily Challenge &amp; Streaks</h4>
+          <p>A new theme every day, with a streak flame to keep. Weekly winners get the spotlight.</p>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🎁</div>
+        <div>
+          <h4>Invite friends, get pushes</h4>
+          <p>Share your code: when a friend joins in, you both get bonus pushes. Bring your crew to your city's top spot.</p>
         </div>
       </div>
     </div>
@@ -633,7 +712,7 @@
       <p>
         SAFER Technologies is a German cybersecurity company. We built FLARE with
         the same security-first mindset we bring to enterprise clients.
-        Full GDPR compliance, transparent data practices, and no hidden tracking.
+        Full GDPR compliance, transparent data practices &mdash; and analytics only if you say &ldquo;Jupp&rdquo;.
       </p>
       <br/>
       <a href="/flare/privacy/" style="color:var(--cyan);text-decoration:none;font-size:16px;font-weight:500;">
@@ -651,15 +730,15 @@
       <div class="feat-card">
         <div class="feat-icon">🙅</div>
         <div>
-          <h4>No hidden data selling</h4>
-          <p>We show ads through AdMob. We never sell your personal data to third parties.</p>
+          <h4>Your location, your rules</h4>
+          <p>Friends see where a photo was taken, everyone else only an approximate spot (~1&nbsp;km). Never your live position.</p>
         </div>
       </div>
       <div class="feat-card">
         <div class="feat-icon">🗑️</div>
         <div>
-          <h4>Delete your account anytime</h4>
-          <p>Full account and data deletion available in-app or by contacting support.</p>
+          <h4>Passkeys &amp; full control</h4>
+          <p>Sign in with Face ID using Apple passkeys, switch analytics off any time, delete your account in the app.</p>
         </div>
       </div>
     </div>
@@ -667,9 +746,9 @@
 
   <!-- CTA -->
   <div class="cta-banner" id="download">
-    <h3>Ready to make your photos <span>go viral</span>?</h3>
+    <h3>Ready to send your photos <span>around the world</span>?</h3>
     <div class="cta-btns">
-      <a href="#" class="btn-store" id="appstore-cta">
+      <a href="https://apps.apple.com/app/id6761497929" class="btn-store" id="appstore-cta">
         <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         Download on App Store
       </a>
@@ -678,7 +757,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2024 SAFER Technologies UG (haftungsbeschränkt) &nbsp;·&nbsp; FLARE App</p>
+    <p>© 2026 SAFER Technologies UG (haftungsbeschränkt) &nbsp;·&nbsp; FLARE App</p>
     <ul class="footer-links">
       <li><a href="/flare/privacy/">Privacy Policy</a></li>
       <li><a href="/flare/terms/">Terms of Use</a></li>
