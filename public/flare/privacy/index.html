@@ -231,7 +231,7 @@
       We take your privacy seriously. This policy explains what data FLARE collects,
       why we collect it, how it is used, and your rights as a user under the GDPR.
     </p>
-    <span class="last-updated">Last updated: October 25, 2026</span>
+    <span class="last-updated">Last updated: October 27, 2026</span>
   </div>
 
   <div class="content">
@@ -284,7 +284,8 @@
           <tr><td>Password (hashed)</td><td>Secure authentication (never stored in plain text)</td><td>Yes</td></tr>
           <tr><td>Home city (centre of the nearest city, never your exact position; set automatically from your first location, changeable in the app every 30 days)</td><td>Travel bonus for local pushes (distance between your home city and the photo) and &ldquo;home anchors&rdquo;: when you push a friend&rsquo;s photo from far away, it is shown in your home city for 24 hours. Other users only see a city name, not who you are</td><td>Yes</td></tr>
           <tr><td>Usage analytics (screens opened, features used such as votes, uploads, map, purchases; pseudonymous user ID, app instance ID, device model, OS version, app version, approximate country). No photos, names, e-mail addresses, captions or coordinates, and no advertising ID</td><td>Improving and simplifying FLARE (Firebase Analytics). Only after you tap &ldquo;Jupp&rdquo; in the in-app prompt; can be switched off any time in Profile</td><td>No</td></tr>
-          <tr><td>Passkey (public key, credential ID, usage counter)</td><td>Secure sign-in with Face ID / Touch ID instead of a password. Only the public key is stored on our server; the private key never leaves your device (iCloud Keychain). Optional</td><td>No</td></tr>
+          <tr><td>Sign in with Apple (Apple user ID, name and e-mail or Apple&rsquo;s private relay address, as shared by you)</td><td>Optional sign-in and account creation with your Apple ID. We never see your Apple password. When you delete your account, your Apple connection is revoked</td><td>No</td></tr>
+          <tr><td>Error reports (error text, screen, app version, OS version; no user ID, no device ID)</td><td>Finding and fixing crashes and bugs. Kept for 30 days</td><td>Yes</td></tr>
           <tr><td>Display name</td><td>Shown on profile and leaderboards</td><td>Optional</td></tr>
           <tr><td>Profile picture</td><td>Shown on your public profile</td><td>Optional</td></tr>
           <tr><td>Bio</td><td>Shown on your public profile</td><td>Optional</td></tr>
@@ -370,7 +371,9 @@
           <tr><td>Providing the core app features (account, battles, trends, rankings)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
           <tr><td>Home city, travel bonus and home anchors</td><td>Art. 6(1)(b) GDPR &mdash; Performance of contract (core function of the app); you can reset or change your home city in Profile and delete your account at any time, which removes it</td></tr>
           <tr><td>Usage analytics with Firebase Analytics</td><td>Art. 6(1)(a) GDPR and &sect; 25(1) TDDDG &mdash; Consent, given in the app and revocable at any time in Profile &gt; &ldquo;Hilf uns, FLARE besser zu machen&rdquo; (revocation does not affect earlier processing)</td></tr>
-          <tr><td>Passkey sign-in (storing the public key and credential ID of your passkey)</td><td>Art. 6(1)(b) — Performance of contract; Art. 32 GDPR — security of processing. You can sign in with a password instead; deleting your account removes your passkeys</td></tr>
+          <tr><td>Sign in with Apple</td><td>Art. 6(1)(b) GDPR &mdash; Performance of contract. You can use e-mail and password instead; deleting your account removes the link and revokes it at Apple</td></tr>
+          <tr><td>Error reports (our own server)</td><td>Art. 6(1)(f) GDPR &mdash; Legitimate interest in a stable app. No identifiers are stored; entries are deleted after 30 days</td></tr>
+          <tr><td>Crash reports with Firebase Crashlytics</td><td>Art. 6(1)(a) GDPR and &sect; 25(1) TDDDG &mdash; Consent (&ldquo;Jupp&rdquo; in the analytics prompt), revocable in Profile</td></tr>
           <tr><td>Location-based content discovery and local rankings (approximate location)</td><td>Art. 6(1)(b) — Performance of contract</td></tr>
           <tr><td>Saving the upload location of a photo and showing it on the map (exactly to friends, approximately to other users); checking the position for a local push</td><td>Art. 6(1)(b) — Performance of contract (core function of the app); location permission revocable at any time in iOS Settings</td></tr>
           <tr><td>Security, fraud prevention, rate-limiting</td><td>Art. 6(1)(f) — Legitimate interests</td></tr>
@@ -400,8 +403,13 @@
           </tr>
           <tr>
             <td><strong>Firebase Analytics</strong><br/><em>Google Ireland Limited, Ireland (parent: Google LLC, USA)</em></td>
-            <td>Usage analytics to improve the app (only with your consent; no advertising ID collected; data is not passed on to AdMob for ad targeting)</td>
+            <td>Usage analytics and crash reports to improve the app (only with your consent; no advertising ID collected; data is not passed on to AdMob for ad targeting)</td>
             <td>policies.google.com/privacy, firebase.google.com/support/privacy</td>
+          </tr>
+          <tr>
+            <td><strong>Sign in with Apple</strong><br/><em>Apple Inc., USA / Apple Distribution International, Ireland</em></td>
+            <td>Optional sign-in with your Apple ID</td>
+            <td>apple.com/privacy</td>
           </tr>
           <tr>
             <td><strong>RevenueCat</strong><br/><em>RevenueCat Inc., USA</em></td>
