@@ -152,7 +152,7 @@ export const translations = {
 
     impressum: {
       heading:         "Legal Notice",
-      tmgLabel:        "Information according to § 5 TMG:",
+      ddgLabel:        "Information according to § 5 DDG:",
       company:         "SAFER Technologies UG (haftungsbeschränkt)",
       address:         "Hauptstraße 35a\n77839, Lichtenau, Germany",
       representedBy:   "Represented by:",
@@ -373,7 +373,7 @@ export const translations = {
 
     impressum: {
       heading:         "Impressum",
-      tmgLabel:        "Angaben gemäß § 5 TMG:",
+      ddgLabel:        "Angaben gemäß § 5 DDG:",
       company:         "SAFER Technologies UG (haftungsbeschränkt)",
       address:         "Hauptstraße 35a\n77839, Lichtenau, Deutschland",
       representedBy:   "Vertreten durch:",

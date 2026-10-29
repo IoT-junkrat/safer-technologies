@@ -11,7 +11,7 @@ const Impressum = () => {
       <div className='flex-1 flex flex-col min-w-0 w-full'>
         <h3 className={styles.heading2}>{im.heading}</h3>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          {im.tmgLabel}<br />
+          {im.ddgLabel}<br />
           {im.company}<br />
           {im.address.split('\n').map((line, i) => <span key={i}>{line}<br /></span>)}<br />
 
