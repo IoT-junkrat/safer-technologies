@@ -9,14 +9,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="FLARE" />
   <meta property="og:title" content="FLARE – Photo Battle" />
-  <meta property="og:description" content="Someone shared a photo battle with you. Open it in FLARE: swipe, vote, push anywhere." />
+  <meta property="og:description" content="Photo battles where your pictures travel. Open this link in FLARE: swipe, vote, push anywhere." />
   <meta property="og:image" content="https://safer.network/flare/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="FLARE – Photo Battle app: two photos, one swipe" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FLARE – Photo Battle" />
-  <meta name="twitter:description" content="Someone shared a photo battle with you. Open it in FLARE: swipe, vote, push anywhere." />
+  <meta name="twitter:description" content="Photo battles where your pictures travel. Open this link in FLARE: swipe, vote, push anywhere." />
   <meta name="twitter:image" content="https://safer.network/flare/og.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,6 +63,8 @@
   <script>
     (function () {
       var API = 'https://api.safer.network/api/v1';
+      var inv = location.pathname.match(/^\/flare\/invite\/([A-Za-z0-9]{4,12})\/?$/);
+      if (inv) { location.replace('/flare/invite/?ref=' + inv[1] + location.search.replace(/^\?/, '&')); return; }
       var m = location.pathname.match(/^\/flare\/(post|battle|trend|user)\/([0-9a-fA-F-]{36})\/?$/);
       if (!m) { document.getElementById('notfound').hidden = false; return; }
       var kind = m[1], id = m[2];
